@@ -1,0 +1,1527 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-b-blocks-audio-player-showcase {
+  box-sizing: border-box;
+}
+.wp-block-b-blocks-audio-player-showcase * {
+  box-sizing: border-box;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 {
+  background: linear-gradient(to right, #1e40af, #2563eb);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-top .ap1-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Inter";
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-top .ap1-artist {
+  font-size: 0.875rem;
+  color: #bfdbfe;
+  margin-top: -15px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-top .ap1-time {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-bar-wrap {
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-bar-wrap .ap1-bar-bg {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #1e3a8a;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-top: -15px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-bar-wrap .ap1-bar-bg .ap1-bar-fill {
+  height: 100%;
+  background-color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-btn {
+  padding: 0.5rem;
+  color: #bfdbfe;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-btn:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-play {
+  padding: 8px 10px;
+  background-color: #ffffff;
+  color: #1d4ed8;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-play:hover {
+  background-color: #dbeafe;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-vol {
+  display: flex;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-vol .ap1-vol-icon {
+  color: #bfdbfe;
+  margin-right: 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-vol .ap1-vol-bg {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: #1e3a8a;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap1 .ap1-controls .ap1-vol .ap1-vol-bg .ap1-vol-fill {
+  width: 66.666%;
+  height: 100%;
+  background-color: #bfdbfe;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 {
+  background-color: #000;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #1f2937;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body {
+  display: flex;
+  gap: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-cover {
+  width: 4rem;
+  height: 4rem;
+  background-color: #1f2937;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-cover .ap2-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-cover .ap2-img.spin {
+  animation: spin 3s linear infinite;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info {
+  flex: 1;
+  margin-top: -14px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-top .ap2-title {
+  font-weight: 500;
+  font-family: "Inter";
+  color: #ffffff;
+  font-size: 16px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-top .ap2-artist {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 0;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-top .ap2-time {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-bar {
+  height: 0.25rem;
+  width: 100%;
+  background-color: #1f2937;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-bar .ap2-bar-fill {
+  height: 100%;
+  background-color: #ef4444;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-controls .ap2-btns {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: -5px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-controls .ap2-btns .ap2-icon {
+  color: #9ca3af;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-controls .ap2-btns .ap2-icon:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-controls .ap2-btns .ap2-play {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ef4444;
+  color: #ffffff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap2 .ap2-body .ap2-info .ap2-controls .ap2-vol {
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 {
+  background: linear-gradient(to bottom right, #4c1d95, #312e81);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ec4899, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "inter";
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-artist {
+  font-size: 0.875rem;
+  color: #a5b4fc;
+  line-height: 0;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background-color: rgba(168, 85, 247, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave {
+  display: flex;
+  gap: 1px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar {
+  width: 2px;
+  height: 8px;
+  background: #d8b4fe;
+  animation: wave 1s ease-in-out infinite;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-wave .ap3-bar:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-top .ap3-status .ap3-duration {
+  color: #d8b4fe;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-progress {
+  margin-bottom: 1.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-progress .ap3-track {
+  height: 0.25rem;
+  width: 100%;
+  background-color: #5b21b6;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-progress .ap3-track .ap3-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ec4899, #a855f7);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-progress .ap3-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #a5b4fc;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls .ap3-icon {
+  color: #a5b4fc;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls .ap3-icon:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls .ap3-play {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls .ap3-vol {
+  display: flex;
+  align-items: center;
+  color: #a5b4fc;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls .ap3-vol .ap3-vol-icon {
+  margin-right: 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls .ap3-vol .ap3-vol-track {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: #5b21b6;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap3 .ap3-controls .ap3-vol .ap3-vol-track .ap3-vol-fill {
+  width: 75%;
+  height: 100%;
+  background-color: #a855f7;
+  border-radius: 9999px;
+}
+@keyframes wave {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 {
+  background-color: #ffffff;
+  color: #111827;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-play {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #4f46e5;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ml-05 {
+  margin-left: 0.125rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-info {
+  flex: 1;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-info .ap4-top {
+  display: flex;
+  justify-content: space-between;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-info .ap4-top .ap4-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "inter";
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-info .ap4-top .ap4-time {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 15px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-info .ap4-bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-info .ap4-bar .ap4-bar-fill {
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 9999px;
+  position: relative;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-info .ap4-bar .ap4-bar-fill .ap4-thumb {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #4f46e5;
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-icons {
+  display: flex;
+  gap: 0.5rem;
+  color: #9ca3af;
+  margin-top: 10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-icons .ap4-icon {
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #9ca3af;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap4 .ap4-inner .ap4-icons .ap4-icon:hover {
+  color: #4f46e5;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player {
+  background-color: #1f2937;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .head {
+  display: flex;
+  justify-content: space-between;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .head .title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: "Inter";
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .head .artist {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: -10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .head .badge {
+  padding: 0.25rem 0.75rem;
+  background-color: rgb(34, 197, 94);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #065f46;
+  border-radius: 9999px;
+  align-self: flex-start;
+  margin-top: 15px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .waveform {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .waveform .bar {
+  width: 2px;
+  background-color: #6b7280;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls .time {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #9ca3af;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls .btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls .btns .icon-btn {
+  color: #9ca3af;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls .btns .icon-btn:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls .btns .play-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(34, 197, 94);
+  color: #065f46;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls .vol {
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .player .controls .vol:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 {
+  background: linear-gradient(to right, #facc15, #f97316, #ef4444);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box {
+  background-color: #111827;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-head .ap6-title {
+  font-weight: 700;
+  color: #fbbf24;
+  font-family: "inter";
+  font-size: 16px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-head .ap6-artist {
+  font-size: 0.75rem;
+  color: rgba(253, 230, 138, 0.7);
+  margin-top: -10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-head .ap6-heart {
+  color: #fbbf24;
+  transition: color 0.3s;
+  background: transparent;
+  border: none;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-head .ap6-heart:hover {
+  color: #fcd34d;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-progress {
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-progress .ap6-track {
+  position: relative;
+  height: 0.25rem;
+  width: 100%;
+  background-color: #1f2937;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-progress .ap6-track .ap6-fill {
+  height: 100%;
+  background-color: #fbbf24;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-progress .ap6-track .ap6-thumb {
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #fbbf24;
+  border-radius: 9999px;
+  border: 2px solid #fff;
+  margin-left: -0.375rem;
+  transform: translateY(-50%);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-progress .ap6-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-controls .ap6-vol {
+  color: #fbbf24;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-controls .ap6-play {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fbbf24;
+  color: #111827;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-controls .ap6-play:hover {
+  background-color: #fcd34d;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-controls .ap6-play .ml-1 {
+  margin-left: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap6 .ap6-box .ap6-controls .ap6-speed {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fbbf24;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row {
+  display: flex;
+  gap: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-thumb {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  background-color: #3b82f6;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-thumb .ap7-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body {
+  flex: 1;
+  margin-top: -10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-title {
+  font-weight: 700;
+  color: #111827;
+  font-family: "inter";
+  font-size: 16px;
+  margin-bottom: -0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-artist {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: -7px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-icon {
+  color: #6b7280;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-icon:hover {
+  color: #3b82f6;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-play {
+  width: 2rem;
+  height: 2rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-play:hover {
+  background-color: #2563eb;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-play .ml-05 {
+  margin-left: 0.125rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-bar {
+  flex: 1;
+  height: 0.25rem;
+  background-color: #d1d5db;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-bar .ap7-bar-fill {
+  height: 100%;
+  background-color: #3b82f6;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap7 .ap7-row .ap7-body .ap7-controls .ap7-time {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 {
+  background: linear-gradient(to bottom, #064e3b, #134e4a);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-head .ap8-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #6ee7b7;
+  font-family: "inter";
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-head .ap8-artist {
+  font-size: 0.75rem;
+  color: #34d399;
+  margin-top: -10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-head .ap8-icons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: -35px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-head .ap8-icons .ap8-icon {
+  color: #3ac492;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-head .ap8-icons .ap8-icon:hover {
+  color: #a7f3d0;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-progress {
+  margin-bottom: 1.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-progress .ap8-bar {
+  position: relative;
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgba(6, 95, 70, 0.5);
+  border-radius: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-progress .ap8-bar .ap8-fill {
+  position: absolute;
+  height: 100%;
+  background-color: #fcd34d;
+  background-color: #fbbf24;
+  background-color: #34d399;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-progress .ap8-bar .ap8-thumb {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-progress .ap8-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #34d399;
+  margin-top: 10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-controls {
+  display: flex;
+  justify-content: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-controls .ap8-play {
+  width: 4rem;
+  height: 4rem;
+  background-color: #34d399;
+  color: #064e3b;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-controls .ap8-play:hover {
+  background-color: #6ee7b7;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap8 .ap8-controls .ap8-play .ml-1 {
+  margin-left: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 {
+  background: linear-gradient(to bottom right, #111827, #1f2937, #111827);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #374151;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-head .ap9-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #db2777;
+  color: white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-head .ap9-title {
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "inter";
+  font-size: 16px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-head .ap9-artist {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: -10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-bar {
+  position: relative;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #374151;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-bar .ap9-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(to right, #db2777, #9333ea);
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls .ap9-time {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls .ap9-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls .ap9-buttons .ap9-btn {
+  color: #9ca3af;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls .ap9-buttons .ap9-btn:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls .ap9-buttons .ap9-play {
+  width: 2rem;
+  height: 2rem;
+  background-color: #db2777;
+  color: #ffffff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls .ap9-buttons .ap9-play:hover {
+  background-color: #ec4899;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap9 .ap9-controls .ap9-buttons .ap9-play .ml-05 {
+  margin-left: 0.125rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 {
+  background-color: #000000;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  width: 100%;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-banner {
+  position: relative;
+  height: 5rem;
+  background: linear-gradient(to right, #ef4444, #8b5cf6);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-banner .ap10-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  opacity: 0.2;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-banner .ap10-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  top: -17px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-banner .ap10-info .ap10-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "inter";
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-banner .ap10-info .ap10-artist {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body {
+  padding: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-progress {
+  height: 0.25rem;
+  width: 100%;
+  background-color: #1f2937;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-progress .ap10-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ef4444, #8b5cf6);
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-controls .ap10-icon {
+  color: #6b7280;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-controls .ap10-icon:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-controls .ap10-main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-controls .ap10-play {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #ef4444, #8b5cf6);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-controls .ap10-play .ml-05 {
+  margin-left: 0.125rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap10 .ap10-body .ap10-controls .ap10-spacer {
+  width: 1.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-top .ap11-play {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f97316;
+  border-radius: 0.375rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-top .ap11-play .ml-05 {
+  margin-left: 0.125rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-top .ap11-title {
+  font-weight: 600;
+  font-family: "inter";
+  font-size: 16px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-top .ap11-artist {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: -13px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-progress .ap11-time {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-progress .ap11-bar {
+  flex: 1;
+  height: 0.5rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-progress .ap11-bar .ap11-fill {
+  height: 100%;
+  background-color: #f97316;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-bottom .ap11-bars {
+  display: flex;
+  gap: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-bottom .ap11-bars .ap11-bar-line {
+  width: 0.25rem;
+  background-color: #fed7aa;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-bottom .ap11-mute {
+  color: #9ca3af;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap11 .ap11-bottom .ap11-mute:hover {
+  color: #f97316;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 {
+  background: linear-gradient(to bottom right, #1e3a8a, #312e81, #4c1d95);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-head .ap12-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "inter";
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-head .ap12-artist {
+  color: #93c5fd;
+  font-size: 0.75rem;
+  margin-top: -10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-head .ap12-time {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-head .ap12-time span {
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-progress {
+  position: relative;
+  height: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-progress .ap12-progress-fill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transition: transform 0.3s ease;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-controls .ap12-icon {
+  color: #93c5fd;
+  transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-controls .ap12-icon:hover {
+  color: #ffffff;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-controls .ap12-play {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap12 .ap12-controls .ml-1 {
+  margin-left: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-thumb {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  flex-shrink: 0;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-thumb .ap13-thumb-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-thumb .ap13-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-thumb .ap13-overlay.show {
+  opacity: 1;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-thumb .ap13-overlay .ap13-overlay-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-thumb .ap13-overlay .ap13-overlay-icon .ap13-pause-icon {
+  color: #111827;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-title {
+  font-weight: 500;
+  color: #111827;
+  font-family: "inter";
+  font-size: 16px;
+  margin-top: 0;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-artist {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: -15px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-time {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: -13px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-header .ap13-time .sep {
+  margin: 0 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-bar-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-bar-wrap .ap13-bar {
+  flex: 1;
+  height: 0.25rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-bar-wrap .ap13-bar .ap13-bar-fill {
+  height: 100%;
+  background-color: #4b5563;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-controls .ap13-icon {
+  color: #9ca3af;
+  transition: color 0.2s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-controls .ap13-icon:hover {
+  color: #4b5563;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-controls .ap13-play {
+  width: 2rem;
+  height: 2rem;
+  background-color: #1f2937;
+  color: #ffffff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-controls .ap13-play:hover {
+  background-color: #374151;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap13 .ap13-controls .ap13-play .ml-05 {
+  margin-left: 0.125rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 {
+  background-color: #0f172a;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  width: 100%;
+  border: 1px solid #1f2937;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-top .ap14-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #22d3ee;
+  font-family: "inter";
+  font-size: 16px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-top .ap14-artist {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: -10px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-top .ap14-cover {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-top .ap14-cover .ap14-cover-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-wavebar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-wavebar .ap14-wavebar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-wavebar .ap14-wavebar-top .ap14-wave {
+  display: flex;
+  gap: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-wavebar .ap14-wavebar-top .ap14-wave .ap14-wave-bar {
+  width: 0.25rem;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-wavebar .ap14-wavebar-top .ap14-time {
+  color: #9ca3af;
+  font-size: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-wavebar .ap14-progress {
+  height: 0.25rem;
+  background-color: #1f2937;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-wavebar .ap14-progress .ap14-progress-fill {
+  height: 100%;
+  background-color: #22d3ee;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-controls .ap14-btn {
+  color: #6b7280;
+  transition: color 0.2s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-controls .ap14-btn:hover {
+  color: #22d3ee;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-controls .ap14-play {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #22d3ee;
+  color: #0f172a;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-controls .ap14-play:hover {
+  background-color: #67e8f9;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap14 .ap14-controls .ap14-play .ml-1 {
+  margin-left: 0.25rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 {
+  background: linear-gradient(to bottom right, #ec4899, #e11d48);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-head .ap15-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "inter";
+  font-size: 16px;
+  color: white;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-head .ap15-artist {
+  color: #fbcfe8;
+  margin-top: -10px;
+  font-size: 0.75rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-head .ap15-cover {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 4px solid white;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-head .ap15-cover.spin {
+  animation: spin 8s linear infinite;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-head .ap15-cover .ap15-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-progressbox {
+  margin-bottom: 2rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-progressbox .ap15-bar-wrap {
+  position: relative;
+  height: 0.5rem;
+  background-color: #9d174d;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-progressbox .ap15-bar-wrap .ap15-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+  border-radius: 9999px;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-progressbox .ap15-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #fbcfe8;
+  margin-top: 0.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-controls .ap15-btn {
+  color: #fbcfe8;
+  transition: color 0.2s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-controls .ap15-btn:hover {
+  color: white;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-controls .ap15-play {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  color: #be123c;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-controls .ap15-play:hover {
+  background-color: #ffe4e6;
+}
+.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .ap15 .ap15-controls .ap15-play .ml-1 {
+  margin-left: 0.25rem;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=view.css.map*/

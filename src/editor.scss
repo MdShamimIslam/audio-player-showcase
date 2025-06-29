@@ -1,0 +1,41 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+	padding: 6px;
+
+	a {
+		text-decoration: none;
+		font-weight: 700;
+	}
+}
+
+.wp-block-b-blocks-audio-player-showcase{
+	.theme-preview-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 50px;
+		margin-top: 20px;
+		background-color: rgb(17, 24, 39);
+		padding: 50px;
+	  	// border-radius: 5px;
+		max-height: 620px;
+		overflow-y: auto;
+	  
+		.theme-preview-item {
+		  cursor: pointer;
+		  transition: all 0.3s ease;
+		  &:hover {
+			  transform: translateY(-2px);
+		  }
+		  .theme-preview-player {
+			  margin-bottom: 10px;
+			  transform-origin: center top;
+		  }  
+		  p{
+			  color: white;
+			  font-family: "inter";
+		  }
+		}
+	  } 
+	  
+}

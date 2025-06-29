@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "b-blocks/audio-player-showcase",
+  "version": "1.0.0",
+  "title": "Audio Player Showcase",
+  "category": "widgets",
+  "description": "Showcase and play your audio tracks with a stylish, customizable player block.",
+  "keywords": [
+    "Audio Player Showcase",
+    "Audio",
+    "Player",
+    "Showcase"
+  ],
+  "textdomain": "b-blocks",
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "wide"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "item": {
+      "type": "object",
+      "default": {
+        "title": "It All Began With a Burst",
+        "artist": "Kishi Bashi",
+        "url": "",
+        "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxhdWRpbyUyMHBsYXllcnMlMjBtdXNpYyUyMHZpc3VhbGl6YXRpb24lMjBlcXVhbGl6ZXJ8ZW58MHx8fHwxNzQ2NzYzNjEzfDA&ixlib=rb-4.1.0&fit=fillmax&h=300&w=400"
+      }
+    },
+    "options": {
+      "type": "object",
+      "default": {
+        "playerSl": ""
+      }
+    },
+    "showcaseElements": {
+      "type": "object",
+      "default": {
+        "isNavigation": true,
+        "isVolume": true,
+        "isCurrentDurationTime": true
+      }
+    },
+    "colors": {
+      "type": "object",
+      "default": {
+        "color": "black",
+        "bg": "#B1C5A4"
+      }
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
