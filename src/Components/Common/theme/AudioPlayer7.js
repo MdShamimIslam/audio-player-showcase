@@ -6,8 +6,7 @@ export default function AudioPlayer7({attributes}) {
   const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
 
   return (
-    <div className="ap7">
-      <div className="ap7-row">
+      <div className="ap7">
         <div className="ap7-thumb">
           <img src={cover} alt={title} className="ap7-img" />
         </div>
@@ -40,6 +39,5 @@ export default function AudioPlayer7({attributes}) {
           </div>
         </div>
       </div>
-    </div>
   );
 }

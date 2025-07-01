@@ -4,7 +4,7 @@ import { useAudio } from '../../../hooks/useAudio';
 export default function AudioPlayer1({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
   const { title, artist, url } = item;
-  const { isNavigation, isVolume, isCurrentDurationTime } = showcaseElements;
+  const { isForBack, isVolume, isCurrentTime, isDurationTime,  } = showcaseElements;
   const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
 
 
@@ -15,7 +15,11 @@ export default function AudioPlayer1({ attributes }) {
           <h3 className="ap1-title">{title}</h3>
           <p className="ap1-artist">{artist}</p>
         </div>
-        {isCurrentDurationTime && <span className="ap1-time">{formatTime(currentTime)} / {formatTime(duration)}</span>}
+        <span className="ap1-time">
+          {isCurrentTime && formatTime(currentTime)}
+          {isCurrentTime && isDurationTime && '/'}
+          {isDurationTime && formatTime(duration)}
+        </span>
       </div>
 
       <div className="ap1-bar-wrap">
@@ -28,11 +32,11 @@ export default function AudioPlayer1({ attributes }) {
       </div>
 
       <div className="ap1-controls">
-        {isNavigation && <button className="ap1-btn"> <SkipBack size={20} /> </button>}
+        {isForBack && <button className="ap1-btn"> <SkipBack size={20} /> </button>}
         <button className="ap1-play" onClick={togglePlay}>
           {isPlaying ? <Pause size={24} /> : <Play size={24} />}
         </button>
-        {isNavigation && <button className="ap1-btn"> <SkipForward size={20} /> </button>}
+        {isForBack && <button className="ap1-btn"> <SkipForward size={20} /> </button>}
 
         {isVolume && <div className="ap1-vol">
           <Volume2 size={16} className="ap1-vol-icon" />

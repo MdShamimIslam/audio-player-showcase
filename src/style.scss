@@ -119,119 +119,116 @@ $primaryColor: #4527a4;
 
 		// audio player 2
 		.ap2 {
+			display: flex;
+			gap: 1rem;
 			background-color: #000;
 			border-radius: 0.5rem;
 			padding: 1rem;
 			width: 100%;
 			border: 1px solid #1f2937;
 
-			.ap2-body {
-				display: flex;
-				gap: 1rem;
+			.ap2-cover {
+				width: 4rem;
+				height: 4rem;
+				background-color: #1f2937;
+				border-radius: 0.375rem;
+				overflow: hidden;
+				flex-shrink: 0;
 
-				.ap2-cover {
-					width: 4rem;
-					height: 4rem;
-					background-color: #1f2937;
-					border-radius: 0.375rem;
-					overflow: hidden;
-					flex-shrink: 0;
+				.ap2-img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
 
-					.ap2-img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
+					&.spin {
+						animation: spin 3s linear infinite;
+					}
+				}
+			}
 
-						&.spin {
-							animation: spin 3s linear infinite;
-						}
+			.ap2-info {
+				flex: 1;
+				margin-top: -14px;
+
+				.ap2-top {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 0.5rem;
+
+					.ap2-title {
+						font-weight: 500;
+						font-family: "Inter";
+						color: #ffffff;
+						font-size: 16px;
+					}
+
+					.ap2-artist {
+						font-size: 0.75rem;
+						color: #9ca3af;
+						line-height: 0;
+					}
+
+					.ap2-time {
+						font-size: 0.75rem;
+						color: #9ca3af;
+						margin-top: 10px;
 					}
 				}
 
-				.ap2-info {
-					flex: 1;
-					margin-top: -14px;
+				.ap2-bar {
+					height: 0.25rem;
+					width: 100%;
+					background-color: #1f2937;
+					border-radius: 9999px;
+					margin-bottom: 0.75rem;
 
-					.ap2-top {
-						display: flex;
-						justify-content: space-between;
-						margin-bottom: 0.5rem;
-
-						.ap2-title {
-							font-weight: 500;
-							font-family: "Inter";
-							color: #ffffff;
-							font-size: 16px;
-						}
-
-						.ap2-artist {
-							font-size: 0.75rem;
-							color: #9ca3af;
-							line-height: 0;
-						}
-
-						.ap2-time {
-							font-size: 0.75rem;
-							color: #9ca3af;
-							margin-top: 10px;
-						}
-					}
-
-					.ap2-bar {
-						height: 0.25rem;
-						width: 100%;
-						background-color: #1f2937;
+					.ap2-bar-fill {
+						height: 100%;
+						background-color: #ef4444;
 						border-radius: 9999px;
-						margin-bottom: 0.75rem;
-
-						.ap2-bar-fill {
-							height: 100%;
-							background-color: #ef4444;
-							border-radius: 9999px;
-						}
 					}
+				}
 
-					.ap2-controls {
+				.ap2-controls {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.ap2-btns {
 						display: flex;
-						justify-content: space-between;
-						align-items: center;
+						gap: 0.5rem;
+						margin-left: -8px;
 
-						.ap2-btns {
-							display: flex;
-							gap: 0.5rem;
-							margin-left: -5px;
+						.ap2-icon {
+							color: #9ca3af;
+							transition: color 0.3s;
+							border: none;
+							background-color: transparent;
+							cursor: pointer;
 
-							.ap2-icon {
-								color: #9ca3af;
-								transition: color 0.3s;
-								border: none;
-								background-color: transparent;
-								cursor: pointer;
-
-								&:hover {
-									color: #ffffff;
-								}
-							}
-
-							.ap2-play {
-								width: 1.5rem;
-								height: 1.5rem;
-								background-color: #ef4444;
+							&:hover {
 								color: #ffffff;
-								border-radius: 9999px;
-								display: flex;
-								align-items: center;
-								justify-content: center;
-								border: none;
-								cursor: pointer;
 							}
 						}
 
-						.ap2-vol {
+						.ap2-play {
+							width: 1.5rem;
+							height: 1.5rem;
+							background-color: #ef4444;
+							color: #ffffff;
+							border-radius: 9999px;
 							display: flex;
 							align-items: center;
-							color: #9ca3af;
+							justify-content: center;
+							border: none;
+							cursor: pointer;
 						}
+					}
+
+					.ap2-vol {
+						display: flex;
+						align-items: center;
+						color: #9ca3af;
 					}
 				}
 			}
@@ -430,17 +427,15 @@ $primaryColor: #4527a4;
 
 		// audio player 4
 		.ap4 {
-			background-color: #ffffff;
-			color: #111827;
-			border-radius: 0.5rem;
-			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-			padding: 1rem;
-			width: 100%;
-
-			.ap4-inner {
 				display: flex;
 				gap: 1rem;
 				align-items: center;
+				background-color: #ffffff;
+				color: #111827;
+				border-radius: 0.5rem;
+				box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+				padding: 1rem;
+				width: 100%;
 
 				.ap4-play {
 					width: 2.5rem;
@@ -526,7 +521,6 @@ $primaryColor: #4527a4;
 						}
 					}
 				}
-			}
 		}
 
 		// audio player 5
@@ -761,108 +755,105 @@ $primaryColor: #4527a4;
 
 		// audio player 7
 		.ap7 {
+			display: flex;
+			gap: 1rem;
 			background-color: #f3f4f6;
-			color: #1f2937;
-			border-radius: 1rem;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			padding: 1.25rem;
-			width: 100%;
+		color: #1f2937;
+		border-radius: 1rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		padding: 1.25rem;
+		width: 100%;
 
-			.ap7-row {
-				display: flex;
-				gap: 1rem;
+			.ap7-thumb {
+				height: 4rem;
+				width: 4rem;
+				border-radius: 0.5rem;
+				background-color: #3b82f6;
+				overflow: hidden;
+				flex-shrink: 0;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
-				.ap7-thumb {
-					height: 4rem;
-					width: 4rem;
-					border-radius: 0.5rem;
-					background-color: #3b82f6;
-					overflow: hidden;
-					flex-shrink: 0;
-					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+				.ap7-img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
 
-					.ap7-img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
+			.ap7-body {
+				flex: 1;
+				margin-top: -10px;
+
+				.ap7-title {
+					font-weight: 700;
+					color: #111827;
+					font-family: "inter";
+					font-size: 16px;
+					margin-bottom: -0.75rem;
 				}
 
-				.ap7-body {
-					flex: 1;
-					margin-top: -10px;
+				.ap7-artist {
+					font-size: 0.875rem;
+					color: #6b7280;
+					margin-bottom: 0.75rem;
+				}
 
-					.ap7-title {
-						font-weight: 700;
-						color: #111827;
-						font-family: "inter";
-						font-size: 16px;
-						margin-bottom: -0.75rem;
-					}
+				.ap7-controls {
+					display: flex;
+					align-items: center;
+					gap: 0.75rem;
+					margin-left: -7px;
 
-					.ap7-artist {
-						font-size: 0.875rem;
+					.ap7-icon {
 						color: #6b7280;
-						margin-bottom: 0.75rem;
+						transition: color 0.3s;
+						border: none;
+						background-color: transparent;
+						cursor: pointer;
+
+						&:hover {
+							color: #3b82f6;
+						}
 					}
 
-					.ap7-controls {
+					.ap7-play {
+						width: 2rem;
+						height: 2rem;
+						background-color: #3b82f6;
+						color: #ffffff;
+						border-radius: 9999px;
 						display: flex;
 						align-items: center;
-						gap: 0.75rem;
-						margin-left: -7px;
+						justify-content: center;
+						transition: background-color 0.3s;
+						cursor: pointer;
+						border: none;
 
-						.ap7-icon {
-							color: #6b7280;
-							transition: color 0.3s;
-							border: none;
-							background-color: transparent;
-							cursor: pointer;
-
-							&:hover {
-								color: #3b82f6;
-							}
+						&:hover {
+							background-color: #2563eb;
 						}
 
-						.ap7-play {
-							width: 2rem;
-							height: 2rem;
+						.ml-05 {
+							margin-left: 0.125rem;
+						}
+					}
+
+					.ap7-bar {
+						flex: 1;
+						height: 0.25rem;
+						background-color: #d1d5db;
+						border-radius: 9999px;
+						overflow: hidden;
+
+						.ap7-bar-fill {
+							height: 100%;
 							background-color: #3b82f6;
-							color: #ffffff;
-							border-radius: 9999px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							transition: background-color 0.3s;
-							cursor: pointer;
-							border: none;
-
-							&:hover {
-								background-color: #2563eb;
-							}
-
-							.ml-05 {
-								margin-left: 0.125rem;
-							}
 						}
+					}
 
-						.ap7-bar {
-							flex: 1;
-							height: 0.25rem;
-							background-color: #d1d5db;
-							border-radius: 9999px;
-							overflow: hidden;
-
-							.ap7-bar-fill {
-								height: 100%;
-								background-color: #3b82f6;
-							}
-						}
-
-						.ap7-time {
-							font-size: 0.875rem;
-							color: #6b7280;
-						}
+					.ap7-time {
+						font-size: 0.875rem;
+						color: #6b7280;
 					}
 				}
 			}

@@ -1,13 +1,14 @@
 import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 
-export default function AudioPlayer4({attributes}) {
-  const {title, url} = attributes.item || {};
+export default function AudioPlayer4({ attributes }) {
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, url } = item;
+  const { isForBack, isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
   const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
 
   return (
-    <div className="ap4">
-      <div className="ap4-inner">
+      <div className="ap4">
         <button className="ap4-play" onClick={togglePlay}>
           {isPlaying ? <Pause size={18} /> : <Play size={18} className="ml-05" />}
         </button>
@@ -16,7 +17,9 @@ export default function AudioPlayer4({attributes}) {
           <div className="ap4-top">
             <h3 className="ap4-title">{title}</h3>
             <span className="ap4-time">
-              {formatTime(currentTime)} / {formatTime(duration)}
+              {isCurrentTime && formatTime(currentTime)}
+              {isCurrentTime && isDurationTime && '/'}
+              {isDurationTime && formatTime(duration)}
             </span>
           </div>
 
@@ -31,17 +34,16 @@ export default function AudioPlayer4({attributes}) {
         </div>
 
         <div className="ap4-icons">
-          <button className="ap4-icon">
+          {isForBack && <button className="ap4-icon">
             <SkipBack size={18} />
-          </button>
-          <button className="ap4-icon">
+          </button>}
+          {isForBack && <button className="ap4-icon">
             <SkipForward size={18} />
-          </button>
-          <button className="ap4-icon">
+          </button>}
+          {isVolume && <button className="ap4-icon">
             <Volume2 size={18} />
-          </button>
+          </button>}
         </div>
       </div>
-    </div>
   );
 }

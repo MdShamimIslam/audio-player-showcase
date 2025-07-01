@@ -35,9 +35,12 @@
 		"showcaseElements": {
 			"type": "object",
 			"default": {
-				"isNavigation": true,
+				"isForBack": true,
 				"isVolume": true,
-				"isCurrentDurationTime": true
+				"isCurrentTime": true,
+				"isDurationTime": true,
+				"isBadge": true,
+				"isHeart": true
 			}
 		},
 		"colors":{

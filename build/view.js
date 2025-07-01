@@ -281,9 +281,10 @@ function AudioPlayer1({
     url
   } = item;
   const {
-    isNavigation,
+    isForBack,
     isVolume,
-    isCurrentDurationTime
+    isCurrentTime,
+    isDurationTime
   } = showcaseElements;
   const {
     isPlaying,
@@ -300,9 +301,9 @@ function AudioPlayer1({
     className: "ap1-title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "ap1-artist"
-  }, artist)), isCurrentDurationTime && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap1-time"
-  }, formatTime(currentTime), " / ", formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime && formatTime(currentTime), isCurrentTime && isDurationTime && '/', isDurationTime && formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap1-bar-wrap"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap1-bar-bg"
@@ -313,7 +314,7 @@ function AudioPlayer1({
     }
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap1-controls"
-  }, isNavigation && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap1-btn"
   }, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 20
@@ -324,7 +325,7 @@ function AudioPlayer1({
     size: 24
   }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 24
-  })), isNavigation && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap1-btn"
   }, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 20
@@ -903,11 +904,20 @@ function AudioPlayer2({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    cover,
-    url
-  } = attributes.item || {};
+    url,
+    cover
+  } = item;
+  const {
+    isForBack,
+    isVolume,
+    isCurrentTime
+  } = showcaseElements;
   const {
     isPlaying,
     currentTime,
@@ -917,8 +927,6 @@ function AudioPlayer2({
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap2-body"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2-cover"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
@@ -933,7 +941,7 @@ function AudioPlayer2({
     className: "ap2-title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "ap2-artist"
-  }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, artist)), isCurrentTime && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap2-time"
   }, formatTime(currentTime))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2-bar"
@@ -946,7 +954,7 @@ function AudioPlayer2({
     className: "ap2-controls"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2-btns"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap2-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 16
@@ -957,15 +965,15 @@ function AudioPlayer2({
     size: 12
   }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 12
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap2-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 16
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }))), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2-vol"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: 14
-  }))))));
+  })))));
 }
 
 /***/ }),
@@ -995,10 +1003,20 @@ function AudioPlayer3({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
     url
-  } = attributes.item || {};
+  } = item;
+  const {
+    isForBack,
+    isVolume,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
     currentTime,
@@ -1021,9 +1039,9 @@ function AudioPlayer3({
   }, [...Array(8)].map((_, i) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     key: i,
     className: "ap3-bar"
-  }))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ", isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap3-duration"
-  }, formatTime(duration)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, formatTime(duration)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), " "))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap3-progress"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap3-track"
@@ -1034,9 +1052,9 @@ function AudioPlayer3({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap3-time"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap3-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap3-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 20
@@ -1048,11 +1066,11 @@ function AudioPlayer3({
   }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 20,
     className: "ml-1"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap3-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 20
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  })), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap3-vol"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: 16,
@@ -1091,9 +1109,19 @@ function AudioPlayer4({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     url
-  } = attributes.item || {};
+  } = item;
+  const {
+    isForBack,
+    isVolume,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
     currentTime,
@@ -1103,8 +1131,6 @@ function AudioPlayer4({
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap4"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap4-inner"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap4-play",
     onClick: togglePlay
@@ -1121,7 +1147,7 @@ function AudioPlayer4({
     className: "ap4-title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap4-time"
-  }, formatTime(currentTime), " / ", formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime && formatTime(currentTime), isCurrentTime && isDurationTime && '/', isDurationTime && formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap4-bar"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap4-bar-fill",
@@ -1132,19 +1158,19 @@ function AudioPlayer4({
     className: "ap4-thumb"
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap4-icons"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap4-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 18
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap4-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 18
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap4-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: 18
-  })))));
+  }))));
 }
 
 /***/ }),
@@ -1366,8 +1392,6 @@ function AudioPlayer7({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap7"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap7-row"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap7-thumb"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: cover,
@@ -1406,7 +1430,7 @@ function AudioPlayer7({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap7-time"
-  }, formatTime(currentTime))))));
+  }, formatTime(currentTime)))));
 }
 
 /***/ }),
