@@ -27,8 +27,18 @@
       "default": {
         "title": "It All Began With a Burst",
         "artist": "Kishi Bashi",
-        "url": "",
-        "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxhdWRpbyUyMHBsYXllcnMlMjBtdXNpYyUyMHZpc3VhbGl6YXRpb24lMjBlcXVhbGl6ZXJ8ZW58MHx8fHwxNzQ2NzYzNjEzfDA&ixlib=rb-4.1.0&fit=fillmax&h=300&w=400"
+        "cover": {
+          "id": null,
+          "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxhdWRpbyUyMHBsYXllcnMlMjBtdXNpYyUyMHZpc3VhbGl6YXRpb24lMjBlcXVhbGl6ZXJ8ZW58MHx8fHwxNzQ2NzYzNjEzfDA&ixlib=rb-4.1.0&fit=fillmax&h=300&w=400",
+          "alt": "",
+          "title": "",
+          "link": ""
+        },
+        "audio": {
+          "id": null,
+          "url": "",
+          "title": ""
+        }
       }
     },
     "options": {
@@ -45,7 +55,9 @@
         "isCurrentTime": true,
         "isDurationTime": true,
         "isBadge": true,
-        "isHeart": true
+        "isHeart": true,
+        "isPlaybackSpeed": true,
+        "isRefresh": true
       }
     },
     "colors": {

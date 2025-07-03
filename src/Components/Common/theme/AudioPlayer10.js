@@ -1,9 +1,12 @@
-import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume2 } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
-export default function AudioPlayer10({attributes}) {
-  const {title, artist, url} = attributes.item || {};
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+export default function AudioPlayer10({ attributes }) {
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, artist, audio: { url } } = item;
+  const { isForBack, isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
+  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
     <div className="ap10">
@@ -17,8 +20,8 @@ export default function AudioPlayer10({attributes}) {
 
       <div className="ap10-body">
         <div className="ap10-time">
-          <span>{formatTime(currentTime)}</span>
-          <span>{formatTime(duration)}</span>
+          {isCurrentTime ? <span>{formatTime(currentTime)}</span> : <span />}
+          {isDurationTime ? <span>{formatTime(duration)}</span> : <span />}
         </div>
 
         <div className="ap10-progress">
@@ -29,20 +32,20 @@ export default function AudioPlayer10({attributes}) {
         </div>
 
         <div className="ap10-controls">
-          <button className="ap10-icon">
+          {isVolume ? <button className="ap10-icon">
             <Volume2 size={20} />
-          </button>
+          </button> : <span />}
 
           <div className="ap10-main">
-            <button className="ap10-icon">
+            {isForBack && <button className="ap10-icon">
               <SkipBack size={20} />
-            </button>
-            <button className="ap10-play" onClick={togglePlay}>
-              {isPlaying ? <Pause size={20} /> : <Play size={20} className="ml-05" />}
-            </button>
-            <button className="ap10-icon">
+            </button>}
+
+            <PlayPause {...{ size: 20, isPlaying, togglePlay }} />
+
+            {isForBack && <button className="ap10-icon">
               <SkipForward size={20} />
-            </button>
+            </button>}
           </div>
 
           <div className="ap10-spacer" />

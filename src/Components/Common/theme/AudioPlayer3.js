@@ -1,11 +1,12 @@
-import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume2 } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer3({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
-  const { title, artist, url } = item;
+  const { title, artist, audio:{url} } = item;
   const { isForBack, isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+  const { isPlaying, currentTime, duration, formatTime, togglePlay } = useAudio(url);
 
   return (
     <div className="ap3">
@@ -45,9 +46,9 @@ export default function AudioPlayer3({ attributes }) {
         {isForBack && <button className="ap3-icon">
           <SkipBack size={20} />
         </button>}
-        <button className="ap3-play" onClick={togglePlay}>
-          {isPlaying ? <Pause size={20} /> : <Play size={20} className="ml-1" />}
-        </button>
+       
+         <PlayPause {...{size:20, isPlaying, togglePlay}} />
+        
         {isForBack && <button className="ap3-icon">
           <SkipForward size={20} />
         </button>}

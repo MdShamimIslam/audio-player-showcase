@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
+import { Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer11({attributes}) {
-  const {title, artist, url} = attributes.item || {};
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, artist, audio: { url } } = item;
+  const { isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
+  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
   const [isMuted, setIsMuted] = useState(false);
 
   const toggleMute = () => setIsMuted(!isMuted);
@@ -12,9 +15,8 @@ export default function AudioPlayer11({attributes}) {
   return (
     <div className="ap11">
       <div className="ap11-top">
-        <button className="ap11-play" onClick={togglePlay}>
-          {isPlaying ? <Pause size={18} /> : <Play size={18} className="ml-05" />}
-        </button>
+
+      <PlayPause {...{size:18, isPlaying, togglePlay}} />
 
         <div>
           <h3 className="ap11-title">{title}</h3>
@@ -23,14 +25,14 @@ export default function AudioPlayer11({attributes}) {
       </div>
 
       <div className="ap11-progress">
-        <span className="ap11-time">{formatTime(currentTime)}</span>
+       {isCurrentTime ? <span className="ap11-time">{formatTime(currentTime)}</span> : <span/>}
         <div className="ap11-bar">
           <div
             className="ap11-fill"
             style={{ width: `${(currentTime / duration) * 100}%` }}
           ></div>
         </div>
-        <span className="ap11-time">{formatTime(duration)}</span>
+       {isDurationTime ? <span className="ap11-time">{formatTime(duration)}</span> : <span/>}
       </div>
 
       <div className="ap11-bottom">
@@ -44,9 +46,9 @@ export default function AudioPlayer11({attributes}) {
           ))}
         </div>
 
-        <button className="ap11-mute" onClick={toggleMute}>
+       {isVolume ? <button className="ap11-mute" onClick={toggleMute}>
           {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
-        </button>
+        </button> : <span/> }
       </div>
     </div>
   );

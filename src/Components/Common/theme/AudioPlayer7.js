@@ -1,14 +1,17 @@
-import { Play, Pause, SkipBack, SkipForward } from 'lucide-react';
+import { SkipBack, SkipForward } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer7({attributes}) {
-  const {title, artist, cover, url} = attributes.item || {};
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, artist, cover, audio:{url} } = item;
+  const { isForBack, isCurrentTime } = showcaseElements;
+  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
       <div className="ap7">
         <div className="ap7-thumb">
-          <img src={cover} alt={title} className="ap7-img" />
+          <img src={cover?.url} alt={title} className="ap7-img" />
         </div>
 
         <div className="ap7-body">
@@ -16,17 +19,15 @@ export default function AudioPlayer7({attributes}) {
           <p className="ap7-artist">{artist}</p>
 
           <div className="ap7-controls">
-            <button className="ap7-icon">
+          {isForBack && <button className="ap7-icon">
               <SkipBack size={18} />
-            </button>
+            </button> }  
 
-            <button className="ap7-play" onClick={togglePlay}>
-              {isPlaying ? <Pause size={16} /> : <Play size={16} className="ml-05" />}
-            </button>
+            <PlayPause {...{size:16, isPlaying, togglePlay}} />
 
-            <button className="ap7-icon">
+           {isForBack && <button className="ap7-icon">
               <SkipForward size={18} />
-            </button>
+            </button> } 
 
             <div className="ap7-bar">
               <div
@@ -35,7 +36,7 @@ export default function AudioPlayer7({attributes}) {
               ></div>
             </div>
 
-            <span className="ap7-time">{formatTime(currentTime)}</span>
+          {isCurrentTime && <span className="ap7-time">{formatTime(currentTime)}</span> }  
           </div>
         </div>
       </div>

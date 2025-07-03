@@ -1,16 +1,19 @@
-import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
-export default function AudioPlayer13({attributes}) {
-  const {title, artist, cover, url} = attributes.item || {};
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+export default function AudioPlayer13({ attributes }) {
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, artist, cover, audio: { url } } = item;
+  const { isForBack, isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
+  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
     <div className="ap13">
       <div className="ap13-header">
         <div className="ap13-thumb">
-          <img 
-            src={cover}
+          <img
+            src={cover.url}
             alt={title}
             className="ap13-thumb-img"
           />
@@ -25,9 +28,9 @@ export default function AudioPlayer13({attributes}) {
           <h3 className="ap13-title">{title}</h3>
           <p className="ap13-artist">{artist}</p>
           <div className="ap13-time">
-            <span>{formatTime(currentTime)}</span>
-            <span className="sep">/</span>
-            <span>{formatTime(duration)}</span>
+            {isCurrentTime && formatTime(currentTime)}
+            {isCurrentTime && isDurationTime && '/'}
+            {isDurationTime && formatTime(duration)}
           </div>
         </div>
       </div>
@@ -42,21 +45,19 @@ export default function AudioPlayer13({attributes}) {
       </div>
 
       <div className="ap13-controls">
-        <button className="ap13-icon">
+        {isForBack && <button className="ap13-icon">
           <SkipBack size={16} />
-        </button>
+        </button>}
 
-        <button className="ap13-play" onClick={togglePlay}>
-          {isPlaying ? <Pause size={14} /> : <Play size={14} className="ml-05" />}
-        </button>
+        <PlayPause {...{ size: 14, isPlaying, togglePlay }} />
 
-        <button className="ap13-icon">
+        {isForBack && <button className="ap13-icon">
           <SkipForward size={16} />
-        </button>
+        </button>}
 
-        <button className="ap13-icon">
+        {isVolume ? <button className="ap13-icon">
           <Volume2 size={16} />
-        </button>
+        </button> : <span />}
       </div>
     </div>
   );

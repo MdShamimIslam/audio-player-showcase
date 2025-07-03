@@ -1,17 +1,18 @@
-import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume2 } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer2({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
-  const { title, artist, url, cover } = item;
+  const { title, artist, audio:{url}, cover={} } = item;
   const { isForBack, isVolume, isCurrentTime } = showcaseElements;
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+  const { isPlaying, currentTime, duration, formatTime, togglePlay } = useAudio(url);
 
   return (
       <div className="ap2">
         <div className="ap2-cover">
           <img
-            src={cover}
+            src={cover.url}
             alt={title}
             className={`ap2-img ${isPlaying ? 'spin' : ''}`}
           />
@@ -38,9 +39,9 @@ export default function AudioPlayer2({ attributes }) {
               {isForBack && <button className="ap2-icon">
                 <SkipBack size={16} />
               </button>}
-              <button className="ap2-play" onClick={togglePlay}>
-                {isPlaying ? <Pause size={12} /> : <Play size={12} />}
-              </button>
+            
+              <PlayPause {...{size:12, isPlaying, togglePlay}} />
+
               {isForBack && <button className="ap2-icon">
                 <SkipForward size={16} />
               </button>}

@@ -1,9 +1,12 @@
-import { Play, Pause, RefreshCw, Volume2 } from 'lucide-react';
+import { RefreshCw, Volume2 } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
-export default function AudioPlayer8({attributes}) {
-  const {title, artist, url} = attributes.item || {};
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+export default function AudioPlayer8({ attributes }) {
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, artist, audio: { url } } = item;
+  const { isVolume, isCurrentTime, isDurationTime, isRefresh } = showcaseElements;
+  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
     <div className="ap8">
@@ -13,12 +16,12 @@ export default function AudioPlayer8({attributes}) {
           <p className="ap8-artist">{artist}</p>
         </div>
         <div className="ap8-icons">
-          <button className="ap8-icon">
+          {isRefresh && <button className="ap8-icon">
             <RefreshCw size={16} />
-          </button>
-          <button className="ap8-icon">
+          </button>}
+          {isVolume && <button className="ap8-icon">
             <Volume2 size={16} />
-          </button>
+          </button>}
         </div>
       </div>
 
@@ -37,15 +40,13 @@ export default function AudioPlayer8({attributes}) {
           ></div>
         </div>
         <div className="ap8-time">
-          <span>{formatTime(currentTime)}</span>
-          <span>{formatTime(duration)}</span>
+          {isCurrentTime ? <span>{formatTime(currentTime)}</span> : <span />}
+          {isDurationTime ? <span>{formatTime(duration)}</span> : <span />}
         </div>
       </div>
 
       <div className="ap8-controls">
-        <button className="ap8-play" onClick={togglePlay}>
-          {isPlaying ? <Pause size={28} /> : <Play size={28} className="ml-1" />}
-        </button>
+        <PlayPause {...{ size: 28, isPlaying, togglePlay }} />
       </div>
     </div>
   );

@@ -6,9 +6,9 @@ import { Label, InlineDetailMediaUpload } from "../../../../../../bpl-tools/Comp
 
 const General = ({ attributes, setAttributes }) => {
   const { item, options, showcaseElements } = attributes;
-  const { isForBack, isVolume, isCurrentTime, isDurationTime, isBadge, isHeart } = showcaseElements || {};
+  const { isForBack, isVolume, isCurrentTime, isDurationTime, isBadge, isHeart, isPlaybackSpeed, isRefresh } = showcaseElements || {};
+  const { title, artist, audio={}, cover={} } = item || {};
   const { playerSl } = options || {};
-  const { title, artist, url, cover } = item || {};
 
   return (
     <>
@@ -44,8 +44,8 @@ const General = ({ attributes, setAttributes }) => {
         <Label>{__("Audio File:", "b-blocks")}</Label>
         <InlineDetailMediaUpload
           types={["audio"]}
-          value={url}
-          onChange={(v) => setAttributes({ item: updateData(item, v.url, 'url') })}
+          value={audio}
+          onChange={(v) => setAttributes({ item: updateData(item, v, 'audio') })}
           placeholder={__("Enter Audio URL", "b-blocks")}
         />
 
@@ -54,7 +54,7 @@ const General = ({ attributes, setAttributes }) => {
           <InlineDetailMediaUpload
             types={["image"]}
             value={cover}
-            onChange={(v) => setAttributes({ item: updateData(item, v.url, 'cover') })}
+            onChange={(v) => setAttributes({ item: updateData(item, v, 'cover') }) }
             placeholder={__("Enter Cover Image URL", "b-blocks")}
           />
         </>
@@ -102,13 +102,31 @@ const General = ({ attributes, setAttributes }) => {
           }
         />}
         
-        {playerSl === "six" && <ToggleControl
+        {playerSl === "six" && <>
+          <ToggleControl
           className="mt10"
           checked={isHeart}
           label={__("Show/Hide Heart icon", "b-blocks")}
-          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isBadge") })
+          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isHeart") })
           }
-        />}
+        />
+          <ToggleControl
+          className="mt10"
+          checked={isPlaybackSpeed}
+          label={__("Show/Hide Playback Speed", "b-blocks")}
+          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isPlaybackSpeed") })
+          }
+        />
+        </>}
+        {playerSl === "eight" && <>
+          <ToggleControl
+          className="mt10"
+          checked={isRefresh}
+          label={__("Show/Hide Refresh icon", "b-blocks")}
+          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isRefresh") })
+          }
+        />
+        </>}
 
       </PanelBody>
     </>

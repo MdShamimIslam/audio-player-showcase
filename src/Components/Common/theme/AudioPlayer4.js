@@ -1,17 +1,16 @@
-import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume2 } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer4({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
-  const { title, url } = item;
+  const { title, audio:{url} } = item;
   const { isForBack, isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+  const {isPlaying ,togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
       <div className="ap4">
-        <button className="ap4-play" onClick={togglePlay}>
-          {isPlaying ? <Pause size={18} /> : <Play size={18} className="ml-05" />}
-        </button>
+        <PlayPause {...{size:18, isPlaying, togglePlay}} />
 
         <div className="ap4-info">
           <div className="ap4-top">

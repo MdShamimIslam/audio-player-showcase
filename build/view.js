@@ -247,6 +247,40 @@ const Style = ({
 
 /***/ }),
 
+/***/ "./src/Components/Common/playerComponents/PlayPause.js":
+/*!*************************************************************!*\
+  !*** ./src/Components/Common/playerComponents/PlayPause.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
+
+
+const PlayPause = ({
+  size,
+  isPlaying,
+  togglePlay
+}) => {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "play",
+    onClick: togglePlay
+  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    size: size
+  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    size: size
+  }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PlayPause);
+
+/***/ }),
+
 /***/ "./src/Components/Common/theme/AudioPlayer1.js":
 /*!*****************************************************!*\
   !*** ./src/Components/Common/theme/AudioPlayer1.js ***!
@@ -259,12 +293,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -278,7 +312,9 @@ function AudioPlayer1({
   const {
     title,
     artist,
-    url
+    audio: {
+      url
+    }
   } = item;
   const {
     isForBack,
@@ -287,57 +323,54 @@ function AudioPlayer1({
     isDurationTime
   } = showcaseElements;
   const {
-    isPlaying,
     currentTime,
     duration,
-    togglePlay,
-    formatTime
+    formatTime,
+    isPlaying,
+    togglePlay
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1"
+    className: "playerOne"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-top"
+    className: "top"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "ap1-title"
+    className: "title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "ap1-artist"
+    className: "artist"
   }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    className: "ap1-time"
+    className: "time"
   }, isCurrentTime && formatTime(currentTime), isCurrentTime && isDurationTime && '/', isDurationTime && formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-bar-wrap"
+    className: "bar-wrap"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-bar-bg"
+    className: "bar-bg"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-bar-fill",
+    className: "bar-fill",
     style: {
       width: `${currentTime / duration * 100}%`
     }
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-controls"
+    className: "controls"
   }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap1-btn"
-  }, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "btn"
+  }, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 20
-  }), " "), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap1-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 24
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: 24
-  })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap1-btn"
-  }, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), " "), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    size: 24,
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "btn"
+  }, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 20
   }), " "), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-vol"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "vol"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 16,
-    className: "ap1-vol-icon"
+    className: "vol-icon"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-vol-bg"
+    className: "vol-bg"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap1-vol-fill"
+    className: "vol-fill"
   })))));
 }
 
@@ -355,12 +388,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -368,15 +401,27 @@ function AudioPlayer10({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isVolume,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -395,7 +440,7 @@ function AudioPlayer10({
     className: "ap10-body"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap10-time"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap10-progress"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap10-fill",
@@ -404,27 +449,23 @@ function AudioPlayer10({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap10-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap10-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    size: 20
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ap10-main"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isVolume ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap10-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 20
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap10-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: 20
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    size: 20,
-    className: "ml-05"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "ap10-main"
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap10-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    size: 20
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    size: 20,
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "ap10-icon"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 20
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap10-spacer"
@@ -445,11 +486,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-x.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-x.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -458,15 +499,26 @@ function AudioPlayer11({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isVolume,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   const [isMuted, setIsMuted] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
@@ -475,32 +527,28 @@ function AudioPlayer11({
     className: "ap11"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap11-top"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap11-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    size: 18
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 18,
-    className: "ml-05"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    isPlaying,
+    togglePlay
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "ap11-title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "ap11-artist"
   }, artist))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap11-progress"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, isCurrentTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap11-time"
-  }, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, formatTime(currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap11-bar"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap11-fill",
     style: {
       width: `${currentTime / duration * 100}%`
     }
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  })), isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap11-time"
-  }, formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, formatTime(duration)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap11-bottom"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap11-bars"
@@ -510,14 +558,14 @@ function AudioPlayer11({
     style: {
       height: 10 + Math.random() * 10
     }
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }))), isVolume ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap11-mute",
     onClick: toggleMute
-  }, isMuted ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, isMuted ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 18
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 18
-  }))));
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null)));
 }
 
 /***/ }),
@@ -534,11 +582,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -546,15 +594,26 @@ function AudioPlayer12({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -565,9 +624,9 @@ function AudioPlayer12({
     className: "ap12-title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "ap12-artist"
-  }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, artist)), (isCurrentTime || isDurationTime) && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap12-time"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime), " / ", formatTime(duration)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, isCurrentTime && formatTime(currentTime), isCurrentTime && isDurationTime && '/', isDurationTime && formatTime(duration)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap12-progress"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap12-progress-fill",
@@ -576,21 +635,17 @@ function AudioPlayer12({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap12-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap12-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 24
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap12-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 24
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 24,
-    className: "ml-1"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap12-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 24
   }))));
 }
@@ -609,12 +664,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -622,16 +678,28 @@ function AudioPlayer13({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
     cover,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isVolume,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -641,14 +709,14 @@ function AudioPlayer13({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap13-thumb"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: cover,
+    src: cover.url,
     alt: title,
     className: "ap13-thumb-img"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: `ap13-overlay ${isPlaying ? 'show' : ''}`
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap13-overlay-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 12,
     className: "ap13-pause-icon"
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
@@ -657,9 +725,7 @@ function AudioPlayer13({
     className: "ap13-artist"
   }, artist), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap13-time"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    className: "sep"
-  }, "/"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime && formatTime(currentTime), isCurrentTime && isDurationTime && '/', isDurationTime && formatTime(duration)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap13-bar-wrap"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap13-bar"
@@ -670,27 +736,23 @@ function AudioPlayer13({
     }
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap13-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap13-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 16
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap13-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    size: 14
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 14,
-    className: "ml-05"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap13-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 16
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), isVolume ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap13-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: 16
-  }))));
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null)));
 }
 
 /***/ }),
@@ -707,12 +769,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -720,16 +782,28 @@ function AudioPlayer14({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
     cover,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isVolume,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -743,7 +817,7 @@ function AudioPlayer14({
   }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap14-cover"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: cover,
+    src: cover?.url,
     alt: title,
     className: "ap14-cover-img"
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -761,7 +835,7 @@ function AudioPlayer14({
     }
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap14-time"
-  }, formatTime(currentTime), " / ", formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime && formatTime(currentTime), isCurrentTime && isDurationTime && '/', isDurationTime && formatTime(duration))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap14-progress"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap14-progress-fill",
@@ -770,27 +844,23 @@ function AudioPlayer14({
     }
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap14-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap14-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 22
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap14-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 24
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 24,
-    className: "ml-1"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "ap14-btn"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    size: 22
+  })), isVolume ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap14-btn"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 22
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap14-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    size: 22
-  }))));
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null)));
 }
 
 /***/ }),
@@ -807,11 +877,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -819,16 +889,27 @@ function AudioPlayer15({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url,
-    cover
-  } = attributes.item || {};
+    cover,
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -842,7 +923,7 @@ function AudioPlayer15({
   }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: `ap15-cover ${isPlaying ? 'spin' : ''}`
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: cover,
+    src: cover?.url,
     alt: title,
     className: "ap15-img"
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -856,23 +937,19 @@ function AudioPlayer15({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap15-time"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap15-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap15-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 30
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap15-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 30
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 30,
-    className: "ml-1"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap15-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 30
   }))));
 }
@@ -891,12 +968,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -910,8 +987,10 @@ function AudioPlayer2({
   const {
     title,
     artist,
-    url,
-    cover
+    audio: {
+      url
+    },
+    cover = {}
   } = item;
   const {
     isForBack,
@@ -922,15 +1001,15 @@ function AudioPlayer2({
     isPlaying,
     currentTime,
     duration,
-    togglePlay,
-    formatTime
+    formatTime,
+    togglePlay
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2-cover"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: cover,
+    src: cover.url,
     alt: title,
     className: `ap2-img ${isPlaying ? 'spin' : ''}`
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -956,22 +1035,19 @@ function AudioPlayer2({
     className: "ap2-btns"
   }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap2-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 16
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap2-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 12
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: 12
-  })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    size: 12,
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap2-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 16
   }))), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap2-vol"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 14
   })))));
 }
@@ -990,12 +1066,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -1009,7 +1085,9 @@ function AudioPlayer3({
   const {
     title,
     artist,
-    url
+    audio: {
+      url
+    }
   } = item;
   const {
     isForBack,
@@ -1021,8 +1099,8 @@ function AudioPlayer3({
     isPlaying,
     currentTime,
     duration,
-    togglePlay,
-    formatTime
+    formatTime,
+    togglePlay
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap3"
@@ -1056,23 +1134,19 @@ function AudioPlayer3({
     className: "ap3-controls"
   }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap3-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 20
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap3-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 20
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 20,
-    className: "ml-1"
-  })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap3-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 20
   })), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap3-vol"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 16,
     className: "ap3-vol-icon"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1096,12 +1170,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -1114,7 +1188,9 @@ function AudioPlayer4({
   } = attributes || {};
   const {
     title,
-    url
+    audio: {
+      url
+    }
   } = item;
   const {
     isForBack,
@@ -1124,22 +1200,18 @@ function AudioPlayer4({
   } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap4"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap4-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    size: 18
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 18,
-    className: "ml-05"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    isPlaying,
+    togglePlay
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap4-info"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap4-top"
@@ -1160,15 +1232,15 @@ function AudioPlayer4({
     className: "ap4-icons"
   }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap4-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 18
   })), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap4-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 18
   })), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap4-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 18
   }))));
 }
@@ -1187,12 +1259,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-1.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-1.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -1200,15 +1272,27 @@ function AudioPlayer5({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isVolume,
+    isCurrentTime,
+    isBadge
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   const generateWaveform = () => {
@@ -1223,9 +1307,9 @@ function AudioPlayer5({
     className: "title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "artist"
-  }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, artist)), isBadge && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "badge"
-  }, "PLAYING")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, " ", isPlaying ? 'PLAYING' : 'PAUSE', " ")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "waveform"
   }, waveform.map((height, i) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     key: i,
@@ -1237,31 +1321,27 @@ function AudioPlayer5({
     }
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "time"
   }, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "btns"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "icon-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 20
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "play-btn",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 20
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 20,
-    className: "ml-0.5"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "icon-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 20
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }))), isVolume ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "vol"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 18
-  }))));
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null)));
 }
 
 /***/ }),
@@ -1278,11 +1358,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/heart.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/heart.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -1290,15 +1370,28 @@ function AudioPlayer1({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isVolume,
+    isCurrentTime,
+    isDurationTime,
+    isHeart,
+    isPlaybackSpeed
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1311,9 +1404,9 @@ function AudioPlayer1({
     className: "ap6-title"
   }, title), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "ap6-artist"
-  }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, artist)), isHeart && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap6-heart"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 18
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap6-progress"
@@ -1332,23 +1425,19 @@ function AudioPlayer1({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap6-time"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, "-", formatTime(duration - currentTime)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, "-", formatTime(duration - currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap6-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isVolume ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap6-vol"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 16
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap6-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: 22
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 22,
-    className: "ml-1"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    isPlaying,
+    togglePlay
+  }), isPlaybackSpeed ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap6-speed"
-  }, "1.0x"))));
+  }, "1.0x") : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null))));
 }
 
 /***/ }),
@@ -1365,11 +1454,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -1377,16 +1466,26 @@ function AudioPlayer7({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
     cover,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isCurrentTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1394,7 +1493,7 @@ function AudioPlayer7({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap7-thumb"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: cover,
+    src: cover?.url,
     alt: title,
     className: "ap7-img"
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1405,21 +1504,17 @@ function AudioPlayer7({
     className: "ap7-artist"
   }, artist), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap7-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap7-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 18
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap7-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 16
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 16,
-    className: "ml-05"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap7-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 18
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap7-bar"
@@ -1428,7 +1523,7 @@ function AudioPlayer7({
     style: {
       width: `${currentTime / duration * 100}%`
     }
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  })), isCurrentTime && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap7-time"
   }, formatTime(currentTime)))));
 }
@@ -1447,11 +1542,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/refresh-cw.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/refresh-cw.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/volume-2.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -1459,15 +1554,27 @@ function AudioPlayer8({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isVolume,
+    isCurrentTime,
+    isDurationTime,
+    isRefresh
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1480,13 +1587,13 @@ function AudioPlayer8({
     className: "ap8-artist"
   }, artist)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap8-icons"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap8-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    size: 16
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isRefresh && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap8-icon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    size: 16
+  })), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "ap8-icon"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 16
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap8-progress"
@@ -1505,17 +1612,13 @@ function AudioPlayer8({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap8-time"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration)))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, isCurrentTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, formatTime(duration)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap8-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap8-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: 28
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 28,
-    className: "ml-1"
-  }))));
+    isPlaying,
+    togglePlay
+  })));
 }
 
 /***/ }),
@@ -1532,12 +1635,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/music.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pause.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/play.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/music.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-back.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/skip-forward.js");
 /* harmony import */ var _hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useAudio */ "./src/hooks/useAudio.js");
+/* harmony import */ var _playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../playerComponents/PlayPause */ "./src/Components/Common/playerComponents/PlayPause.js");
+
 
 
 
@@ -1545,15 +1648,26 @@ function AudioPlayer9({
   attributes
 }) {
   const {
+    item = {},
+    showcaseElements = {}
+  } = attributes || {};
+  const {
     title,
     artist,
-    url
-  } = attributes.item || {};
+    audio: {
+      url
+    }
+  } = item;
+  const {
+    isForBack,
+    isCurrentTime,
+    isDurationTime
+  } = showcaseElements;
   const {
     isPlaying,
+    togglePlay,
     currentTime,
     duration,
-    togglePlay,
     formatTime
   } = (0,_hooks_useAudio__WEBPACK_IMPORTED_MODULE_1__.useAudio)(url);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1562,7 +1676,7 @@ function AudioPlayer9({
     className: "ap9-head"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap9-icon"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 18
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "ap9-title"
@@ -1577,29 +1691,25 @@ function AudioPlayer9({
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap9-controls"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, isCurrentTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap9-time"
-  }, formatTime(currentTime)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, formatTime(currentTime)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "ap9-buttons"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap9-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: 18
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "ap9-play",
-    onClick: togglePlay
-  }, isPlaying ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: 16
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_playerComponents_PlayPause__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 16,
-    className: "ml-05"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    isPlaying,
+    togglePlay
+  }), isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "ap9-btn"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 18
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }))), isDurationTime ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "ap9-time"
-  }, formatTime(duration))));
+  }, formatTime(duration)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null)));
 }
 
 /***/ }),

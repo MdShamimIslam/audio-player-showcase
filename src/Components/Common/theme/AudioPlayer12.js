@@ -1,9 +1,12 @@
-import { Play, Pause, SkipBack, SkipForward } from 'lucide-react';
+import { SkipBack, SkipForward } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
+import PlayPause from '../playerComponents/PlayPause';
 
-export default function AudioPlayer12({attributes}) {
-  const {title, artist, url} = attributes.item || {};
-  const { isPlaying, currentTime, duration, togglePlay, formatTime } = useAudio(url);
+export default function AudioPlayer12({ attributes }) {
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, artist, audio: { url } } = item;
+  const { isForBack, isCurrentTime, isDurationTime, } = showcaseElements;
+  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
     <div className="ap12">
@@ -13,9 +16,14 @@ export default function AudioPlayer12({attributes}) {
           <p className="ap12-artist">{artist}</p>
         </div>
 
-        <div className="ap12-time">
-          <span>{formatTime(currentTime)} / {formatTime(duration)}</span>
-        </div>
+        {(isCurrentTime || isDurationTime) && <div className="ap12-time">
+          <span>
+            {isCurrentTime && formatTime(currentTime)}
+            {isCurrentTime && isDurationTime && '/'}
+            {isDurationTime && formatTime(duration)}
+          </span>
+          
+        </div>}
       </div>
 
       <div className="ap12-progress">
@@ -26,17 +34,15 @@ export default function AudioPlayer12({attributes}) {
       </div>
 
       <div className="ap12-controls">
-        <button className="ap12-icon">
+        {isForBack && <button className="ap12-icon">
           <SkipBack size={24} />
-        </button>
+        </button>}
 
-        <button className="ap12-play" onClick={togglePlay}>
-          {isPlaying ? <Pause size={24} /> : <Play size={24} className="ml-1" />}
-        </button>
+        <PlayPause {...{ size: 24, isPlaying, togglePlay }} />
 
-        <button className="ap12-icon">
+        {isForBack && <button className="ap12-icon">
           <SkipForward size={24} />
-        </button>
+        </button>}
       </div>
     </div>
   );

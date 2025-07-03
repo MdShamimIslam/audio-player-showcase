@@ -5,5 +5,5 @@ import Edit from './Components/Backend/Edit';
 
 registerBlockType(metadata, {
 	icon: { src: 'format-audio', foreground: '#4527a4' },
-	edit: Edit,
+	edit: Edit
 });
