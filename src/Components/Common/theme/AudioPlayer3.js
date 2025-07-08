@@ -9,53 +9,53 @@ export default function AudioPlayer3({ attributes }) {
   const { isPlaying, currentTime, duration, formatTime, togglePlay } = useAudio(url);
 
   return (
-    <div className="ap3">
-      <div className="ap3-top">
+    <div className="player3 audioPlayer">
+      <div className="top">
         <div>
-          <h3 className="ap3-title">{title}</h3>
-          <p className="ap3-artist">{artist}</p>
+          <h3 className="title">{title}</h3>
+          <p className="artist">{artist}</p>
         </div>
-        <div className="ap3-status">
+        <div className="status">
           {isPlaying ? (
-            <div className="ap3-wave">
+            <div className="wave">
               {[...Array(8)].map((_, i) => (
-                <div key={i} className="ap3-bar"></div>
+                <div key={i} className="bar"></div>
               ))}
             </div>
           ) : (
-            <> {isDurationTime ? <span className="ap3-duration">{formatTime(duration)}</span> : <span></span>} </>
+            <> {isDurationTime ? <span className="duration">{formatTime(duration)}</span> : <span></span>} </>
           )}
         </div>
       </div>
 
-      <div className="ap3-progress">
-        <div className="ap3-track">
+      <div className="progress">
+        <div className="bar-bg">
           <div
-            className="ap3-fill"
+            className="bar-fill"
             style={{ width: `${(currentTime / duration) * 100}%` }}
           ></div>
         </div>
-        <div className="ap3-time">
+        <div className="time">
           {isCurrentTime ? <span>{formatTime(currentTime)}</span> : <span></span>}
           {isDurationTime ? <span>{formatTime(duration)}</span> : <span></span>}
 
         </div>
       </div>
 
-      <div className="ap3-controls">
-        {isForBack && <button className="ap3-icon">
+      <div className="controls">
+        {isForBack && <button className="btn">
           <SkipBack size={20} />
         </button>}
        
          <PlayPause {...{size:20, isPlaying, togglePlay}} />
         
-        {isForBack && <button className="ap3-icon">
+        {isForBack && <button className="btn">
           <SkipForward size={20} />
         </button>}
-        {isVolume && <div className="ap3-vol">
-          <Volume2 size={16} className="ap3-vol-icon" />
-          <div className="ap3-vol-track">
-            <div className="ap3-vol-fill"></div>
+        {isVolume && <div className="vol">
+          <Volume2 size={16} className="vol-icon" />
+          <div className="vol-track">
+            <div className="vol-fill"></div>
           </div>
         </div>}
       </div>

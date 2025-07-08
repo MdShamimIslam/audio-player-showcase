@@ -9,38 +9,38 @@ export default function AudioPlayer1({ attributes }) {
   const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
-    <div className="ap6">
-      <div className="ap6-box">
-        <div className="ap6-head">
+    <div className="player6 audioPlayer">
+      <div className="info">
+        <div className="top">
           <div>
-            <h3 className="ap6-title">{title}</h3>
-            <p className="ap6-artist">{artist}</p>
+            <h3 className="title">{title}</h3>
+            <p className="artist">{artist}</p>
           </div>
-          {isHeart && <button className="ap6-heart">
+          {isHeart && <button className="heart">
             <Heart size={18} />
           </button>}
         </div>
 
-        <div className="ap6-progress">
-          <div className="ap6-track">
-            <div className="ap6-fill" style={{ width: `${(currentTime / duration) * 100}%` }}></div>
-            <div className="ap6-thumb" style={{ left: `${(currentTime / duration) * 100}%`, top: '50%' }}></div>
+        <div className="progress">
+          <div className="bar-bg">
+            <div className="bar-fill" style={{ width: `${(currentTime / duration) * 100}%` }}></div>
+            <div className="thumb" style={{ left: `${(currentTime / duration) * 100}%`, top: '50%' }}></div>
           </div>
 
-          <div className="ap6-time">
+          <div className="time">
             {isCurrentTime ? <span>{formatTime(currentTime)}</span> : <span />}
             {isDurationTime ? <span>-{formatTime(duration - currentTime)}</span> : <span />}
           </div>
         </div>
 
-        <div className="ap6-controls">
-          {isVolume ? <div className="ap6-vol">
+        <div className="controls">
+          {isVolume ? <div className="vol">
             <Volume2 size={16} />
           </div> : <div />}
 
           <PlayPause {...{ size: 22, isPlaying, togglePlay }} />
 
-          {isPlaybackSpeed ? <div className="ap6-speed">1.0x</div> : <div />}
+          {isPlaybackSpeed ? <div className="speed">1.0x</div> : <div />}
         </div>
       </div>
     </div>

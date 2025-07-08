@@ -1,10 +1,10 @@
 import { Pause, Play } from "lucide-react";
 
-const PlayPause = ({ size, isPlaying, togglePlay }) => {
+const PlayPause = ({ isPlaying, togglePlay }) => {
 
     return (
         <button className="play" onClick={togglePlay}>
-            {isPlaying ? <Pause size={size} /> : <Play size={size} />}
+            {isPlaying ? <Pause className="lucideIcn" /> : <Play className="lucideIcn" />}
         </button>
     )
 }

@@ -9,34 +9,34 @@ export default function AudioPlayer7({attributes}) {
   const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
-      <div className="ap7">
-        <div className="ap7-thumb">
-          <img src={cover?.url} alt={title} className="ap7-img" />
+      <div className="player7 audioPlayer">
+        <div className="cover">
+          <img src={cover?.url} alt={title} className="img" />
         </div>
 
-        <div className="ap7-body">
-          <h3 className="ap7-title">{title}</h3>
-          <p className="ap7-artist">{artist}</p>
+        <div className="body">
+          <h3 className="title">{title}</h3>
+          <p className="artist">{artist}</p>
 
-          <div className="ap7-controls">
-          {isForBack && <button className="ap7-icon">
+          <div className="controls">
+          {isForBack && <button className="btn">
               <SkipBack size={18} />
             </button> }  
 
             <PlayPause {...{size:16, isPlaying, togglePlay}} />
 
-           {isForBack && <button className="ap7-icon">
+           {isForBack && <button className="btn">
               <SkipForward size={18} />
             </button> } 
 
-            <div className="ap7-bar">
+            <div className="bar-bg">
               <div
-                className="ap7-bar-fill"
+                className="bar-fill"
                 style={{ width: `${(currentTime / duration) * 100}%` }}
               ></div>
             </div>
 
-          {isCurrentTime && <span className="ap7-time">{formatTime(currentTime)}</span> }  
+          {isCurrentTime && <span className="time">{formatTime(currentTime)}</span> }  
           </div>
         </div>
       </div>

@@ -9,40 +9,40 @@ export default function AudioPlayer9({ attributes }) {
   const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
-    <div className="ap9">
-      <div className="ap9-head">
-        <div className="ap9-icon">
+    <div className="player9 audioPlayer">
+      <div className="head">
+        <div className="icon">
           <Music size={18} />
         </div>
         <div>
-          <h3 className="ap9-title">{title}</h3>
-          <p className="ap9-artist">{artist}</p>
+          <h3 className="title">{title}</h3>
+          <p className="artist">{artist}</p>
         </div>
       </div>
 
-      <div className="ap9-bar">
+      <div className="bar-bg">
         <div
-          className="ap9-bar-fill"
+          className="bar-fill"
           style={{ width: `${(currentTime / duration) * 100}%` }}
         ></div>
       </div>
 
-      <div className="ap9-controls">
-        {isCurrentTime ? <span className="ap9-time">{formatTime(currentTime)}</span> : <span />}
+      <div className="controls">
+        {isCurrentTime ? <span className="time">{formatTime(currentTime)}</span> : <span />}
 
-        <div className="ap9-buttons">
-          {isForBack && <button className="ap9-btn">
+        <div className="buttons">
+          {isForBack && <button className="btn">
             <SkipBack size={18} />
           </button>}
 
           <PlayPause {...{ size: 16, isPlaying, togglePlay }} />
 
-          {isForBack && <button className="ap9-btn">
+          {isForBack && <button className="btn">
             <SkipForward size={18} />
           </button>}
         </div>
 
-        {isDurationTime ? <span className="ap9-time">{formatTime(duration)}</span> : <span />}
+        {isDurationTime ? <span className="time">{formatTime(duration)}</span> : <span />}
       </div>
     </div>
   );

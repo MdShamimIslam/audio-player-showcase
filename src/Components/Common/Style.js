@@ -1,17 +1,131 @@
-import { getColorsCSS } from '../../../../Components/utils/getCSS';
+import { mobileBreakpoint, tabBreakpoint } from '../../../../bpl-tools/utils/data';
+import { getBackgroundCSS, getBorderBoxCSS, getBoxCSS, getColorsCSS, getTypoCSS } from '../../../../bpl-tools/utils/getCSS';
 
-const Style = ({ attributes, id }) => {
-	const { colors } = attributes;
+const Style = ({ attributes, id, device="desktop" }) => {
+	const { alignment, style = {} } = attributes;
+	const { width, padding, radius, bg, border, title={}, artist={}, time={}, thumbnail={}, controls={}, range={} } = style || {};
+
 
 	const mainSl = `#${id}`;
-	const blockSl = `${mainSl} .bBlocksTestPurpose`;
+	const blockSl = `${mainSl} .bBlocksAudioPlayer`;
+	const audioPlayerWrapperSl = `${blockSl} .audioPlayerWrapper`;
+	const audioPlayerSl = `${blockSl} .audioPlayer`;
+	const titleSl = `${audioPlayerSl} .title`;
+	const artistSl = `${audioPlayerSl} .artist`;
+	const timeSl = `${audioPlayerSl} .time`;
+	const thumbnailSl = `${audioPlayerSl} .cover`;
+	const forwardBackwardSl = `${audioPlayerSl} .btn`;
+	const lucideIcnSl = `${audioPlayerSl} .lucideIcn`;
+	const playPauseSl = `${audioPlayerSl} .play`;
+	const barBgSl = `${audioPlayerSl} .bar-bg`;
+	const barFillSl = `${audioPlayerSl} .bar-fill`;
+
 
 	return <style dangerouslySetInnerHTML={{
 		__html: `
-		
-			${blockSl} p{
-				${getColorsCSS(colors)}
+
+			${getTypoCSS('', title.typo)?.googleFontLink}
+			${getTypoCSS('', artist.typo)?.googleFontLink}
+			${getTypoCSS('', time.typo)?.googleFontLink}
+			${getTypoCSS(titleSl, title.typo)?.styles}
+			${getTypoCSS(artistSl, artist.typo)?.styles}
+			${getTypoCSS(timeSl, time.typo)?.styles}
+
+			${blockSl} {
+				justify-content: ${alignment[device]};
 			}
+
+			${audioPlayerWrapperSl} {
+				width: ${width[device]};
+			}
+
+			${audioPlayerSl}{
+				${getBackgroundCSS(bg)}
+				${getBorderBoxCSS(border || {})}
+				border-radius: ${radius}px;
+				padding: ${padding};
+			}
+
+			${titleSl} {
+				color: ${title.color};
+			}
+
+			${artistSl} {
+				color: ${artist.color};
+			}
+
+			${timeSl} {
+				${getColorsCSS(time.colors)}
+			}
+
+			${thumbnailSl} {
+				width: ${thumbnail?.width[device]};
+				height: ${thumbnail?.height[device]};
+				${getBorderBoxCSS(thumbnail.border || {})}
+				border-radius: ${getBoxCSS(thumbnail.radius || {})};
+			}
+
+			${forwardBackwardSl} {
+				color: ${controls?.color};
+			}
+			${forwardBackwardSl}:hover {
+				color: ${controls?.hovColor};
+			}
+
+			${lucideIcnSl} {
+				width: ${controls?.size}px;
+				height: ${controls?.size}px;
+			}
+
+			${playPauseSl} {
+				${getColorsCSS(controls?.playPauseColors)}
+			}
+			${playPauseSl}:hover {
+				${getColorsCSS(controls?.playPauseHovColors)}
+			}
+
+			${barBgSl} {
+				background-color: ${range?.color};
+			}
+
+			${barFillSl} {
+				background-color: ${range?.progressColor};
+			}
+
+
+
+			${tabBreakpoint}{
+				${blockSl} {
+					justify-content: ${alignment.tablet};
+				}
+
+				${audioPlayerWrapperSl} {
+					width: ${width.tablet};
+				}
+
+				${thumbnailSl} {
+					width: ${thumbnail?.width[device]};
+					height: ${thumbnail?.height[device]};
+				}
+			}
+
+
+
+			${mobileBreakpoint}{
+				${blockSl} {
+					justify-content: ${alignment.mobile};
+				}
+
+				${audioPlayerWrapperSl} {
+					width: ${width.mobile};
+				}
+
+				${thumbnailSl} {
+					width: ${thumbnail?.width[device]};
+					height: ${thumbnail?.height[device]};
+				}
+			}
+			
 
 	`}} />;
 }

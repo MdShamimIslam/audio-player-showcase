@@ -9,38 +9,38 @@ export default function AudioPlayer12({ attributes }) {
   const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
-    <div className="ap12">
-      <div className="ap12-head">
+    <div className="player12 audioPlayer">
+      <div className="head">
         <div>
-          <h3 className="ap12-title">{title}</h3>
-          <p className="ap12-artist">{artist}</p>
+          <h3 className="title">{title}</h3>
+          <p className="artist">{artist}</p>
         </div>
 
-        {(isCurrentTime || isDurationTime) && <div className="ap12-time">
-          <span>
+        {(isCurrentTime || isDurationTime) && <div className="time">
+          {/* <span> */}
             {isCurrentTime && formatTime(currentTime)}
             {isCurrentTime && isDurationTime && '/'}
             {isDurationTime && formatTime(duration)}
-          </span>
+          {/* </span> */}
           
         </div>}
       </div>
 
-      <div className="ap12-progress">
+      <div className="bar-bg">
         <div
-          className="ap12-progress-fill"
+          className="bar-fill"
           style={{ transform: `translateX(${-100 + (currentTime / duration) * 100}%)` }}
         ></div>
       </div>
 
-      <div className="ap12-controls">
-        {isForBack && <button className="ap12-icon">
+      <div className="controls">
+        {isForBack && <button className="btn">
           <SkipBack size={24} />
         </button>}
 
         <PlayPause {...{ size: 24, isPlaying, togglePlay }} />
 
-        {isForBack && <button className="ap12-icon">
+        {isForBack && <button className="btn">
           <SkipForward size={24} />
         </button>}
       </div>

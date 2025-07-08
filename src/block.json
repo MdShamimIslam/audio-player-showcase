@@ -15,7 +15,11 @@
 		},
 		"alignment": {
 			"type": "string",
-			"default": "center"
+			"default": {
+				"desktop": "left",
+				"tablet": "left",
+				"mobile": "left"
+			}
 		},
 		"item": {
 			"type": "object",
@@ -55,11 +59,85 @@
 				"isRefresh": true
 			}
 		},
-		"colors":{
-			"type":"object",
-			"default":{
-				"color": "black",
-				"bg": "#B1C5A4"
+		"style": {
+			"type": "object",
+			"default": {
+				"width": {
+					"desktop": "100%",
+					"tablet": "100%",
+					"mobile": "100%"
+				},
+				"padding": "",
+				"radius":"",
+				"bg":{},
+				"border": {"width": "","style": "","color": ""},
+				"title": {
+					"typo": {
+						"fontSize": {
+							"desktop": "",
+							"tablet": "",
+							"mobile": ""
+						}
+					},
+					"color": ""
+				},
+				"artist": {
+					"typo": {
+						"fontSize": {
+							"desktop": "",
+							"tablet": "",
+							"mobile": ""
+						}
+					},
+					"color": ""
+				},
+				"time": {
+					"typo": {
+						"fontSize": {
+							"desktop": "",
+							"tablet": "",
+							"mobile": ""
+						}
+					},
+					"colors": {
+						"color": "",
+						"bg": ""
+					}
+				},
+				"thumbnail": {
+					"width": {"desktop": "",
+							"tablet": "",
+							"mobile": ""},
+					"height": {"desktop": "",
+							"tablet": "",
+							"mobile": ""},
+					"border": {"width": "",
+						"style": "",
+						"color": ""},
+					"radius": {}
+				},
+				"controls": {
+					"size": "",
+					"color":"",
+					"hovColor":"",
+					"playPauseColors": {
+						"color": "",
+						"bg": ""
+					},
+					"playPauseHovColors": {
+						"color": "",
+						"bg": ""
+					}
+				},
+				"volume": {
+					"size": "",
+					"color": "",
+					"hovColor": ""
+				},
+				"range": {
+					"color": "",
+					"progressColor": ""
+				}
 			}
 		}
 	},

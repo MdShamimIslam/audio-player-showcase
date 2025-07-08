@@ -1,8 +1,9 @@
 import { __ } from "@wordpress/i18n";
 import { PanelBody, SelectControl, PanelRow, TextControl, ToggleControl } from "@wordpress/components";
 import { playerTypeOptions } from "../../../../utils/options";
-import { updateData } from "../../../../utils/functions";
+import { themeSwitch } from "../../../../utils/functions";
 import { Label, InlineDetailMediaUpload } from "../../../../../../bpl-tools/Components";
+import { updateData } from "../../../../../../bpl-tools/utils/functions";
 
 const General = ({ attributes, setAttributes }) => {
   const { item, options, showcaseElements } = attributes;
@@ -21,7 +22,8 @@ const General = ({ attributes, setAttributes }) => {
           labelPosition="left"
           value={playerSl}
           options={playerTypeOptions}
-          onChange={(v) => setAttributes({ options: updateData(options, v, 'playerSl') })}
+          // onChange={(v) => setAttributes({ options: updateData(options, v, 'playerSl') })}
+          onChange={(val) => setAttributes(themeSwitch(val, attributes)) }
           help={__("Some settings will be change when you will change the player.", "b-blocks")}
         />
 

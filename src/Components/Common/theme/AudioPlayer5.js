@@ -16,8 +16,8 @@ export default function AudioPlayer5({ attributes }) {
   const waveform = generateWaveform();
 
   return (
-    <div className="player">
-      <div className="head">
+    <div className="player5 audioPlayer">
+      <div className="top">
         <div>
           <h3 className="title">{title}</h3>
           <p className="artist">{artist}</p>
@@ -43,13 +43,13 @@ export default function AudioPlayer5({ attributes }) {
         {isCurrentTime && <div className="time">{formatTime(currentTime)}</div>}
 
         <div className="btns">
-          {isForBack && <button className="icon-btn">
+          {isForBack && <button className="btn">
             <SkipBack size={20} />
           </button>}
 
           <PlayPause {...{ size: 20, isPlaying, togglePlay }} />
 
-          {isForBack && <button className="icon-btn">
+          {isForBack && <button className="btn">
             <SkipForward size={20} />
           </button>}
         </div>

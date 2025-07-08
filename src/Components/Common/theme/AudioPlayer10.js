@@ -9,46 +9,46 @@ export default function AudioPlayer10({ attributes }) {
   const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
 
   return (
-    <div className="ap10">
-      <div className="ap10-banner">
-        <div className="ap10-overlay"></div>
-        <div className="ap10-info">
-          <h3 className="ap10-title">{title}</h3>
-          <p className="ap10-artist">{artist}</p>
+    <div className="player10 audioPlayer">
+      <div className="banner">
+        <div className="overlay"></div>
+        <div className="info">
+          <h3 className="title">{title}</h3>
+          <p className="artist">{artist}</p>
         </div>
       </div>
 
-      <div className="ap10-body">
-        <div className="ap10-time">
+      <div className="body">
+        <div className="time">
           {isCurrentTime ? <span>{formatTime(currentTime)}</span> : <span />}
           {isDurationTime ? <span>{formatTime(duration)}</span> : <span />}
         </div>
 
-        <div className="ap10-progress">
+        <div className="bar-bg">
           <div
-            className="ap10-fill"
+            className="bar-fill"
             style={{ width: `${(currentTime / duration) * 100}%` }}
           ></div>
         </div>
 
-        <div className="ap10-controls">
-          {isVolume ? <button className="ap10-icon">
+        <div className="controls">
+          {isVolume ? <button className="btn">
             <Volume2 size={20} />
           </button> : <span />}
 
-          <div className="ap10-main">
-            {isForBack && <button className="ap10-icon">
+          <div className="main">
+            {isForBack && <button className="btn">
               <SkipBack size={20} />
             </button>}
 
             <PlayPause {...{ size: 20, isPlaying, togglePlay }} />
 
-            {isForBack && <button className="ap10-icon">
+            {isForBack && <button className="btn">
               <SkipForward size={20} />
             </button>}
           </div>
 
-          <div className="ap10-spacer" />
+          <div className="spacer" />
         </div>
       </div>
     </div>

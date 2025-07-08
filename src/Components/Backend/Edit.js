@@ -1,4 +1,5 @@
 import { useBlockProps } from "@wordpress/block-editor";
+import { withSelect } from "@wordpress/data";
 import Settings from "./Settings/Settings";
 import Style from "../Common/Style";
 import Theme from "../Common/theme/theme";
@@ -6,21 +7,23 @@ import { playerTypeOptions } from "../../utils/options";
 import { produce } from "immer";
 
 const Edit = (props) => {
-  const { attributes, setAttributes, clientId } = props;
-  const { options:{playerSl} } = attributes;
+  const { attributes, setAttributes, clientId, device } = props;
+  const { options: { playerSl } } = attributes;
 
   const blockProps = useBlockProps({ draggable: false });
 
   return (
     <>
-      <Settings {...{ attributes, setAttributes }} />
+      <Settings {...{ attributes, setAttributes, device }} />
 
       <div {...blockProps}>
-        <Style attributes={attributes} id={`block-${clientId}`} />
+        <Style attributes={attributes} id={`block-${clientId}`} device={device} />
 
         {playerSl &&
           <div className="bBlocksAudioPlayer">
-            <Theme {...{ attributes }} />
+            <div className="audioPlayerWrapper">
+              <Theme {...{ attributes }} />
+            </div>
           </div>
         }
 
@@ -36,15 +39,17 @@ const Edit = (props) => {
             >
               <div className="theme-preview-player">
                 <div className="bBlocksAudioPlayer">
-                  <Theme
-                    attributes={{
-                      ...attributes,
-                      options: {
-                        ...attributes.options,
-                        playerSl: option.value,
-                      },
-                    }}
-                  />
+                  <div className="audioPlayerWrapper">
+                    <Theme
+                      attributes={{
+                        ...attributes,
+                        options: {
+                          ...attributes.options,
+                          playerSl: option.value,
+                        },
+                      }}
+                    />
+                  </div>
                 </div>
                 <p>{option.label}</p>
               </div>
@@ -56,4 +61,11 @@ const Edit = (props) => {
     </>
   );
 };
-export default Edit;
+
+export default withSelect((select) => {
+  const { getDeviceType } = select("core/editor");
+
+  return {
+    device: getDeviceType()?.toLowerCase(),
+  };
+})(Edit);

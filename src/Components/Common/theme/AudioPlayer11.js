@@ -13,40 +13,40 @@ export default function AudioPlayer11({attributes}) {
   const toggleMute = () => setIsMuted(!isMuted);
 
   return (
-    <div className="ap11">
-      <div className="ap11-top">
+    <div className="player11 audioPlayer">
+      <div className="top">
 
       <PlayPause {...{size:18, isPlaying, togglePlay}} />
 
         <div>
-          <h3 className="ap11-title">{title}</h3>
-          <p className="ap11-artist">{artist}</p>
+          <h3 className="title">{title}</h3>
+          <p className="artist">{artist}</p>
         </div>
       </div>
 
-      <div className="ap11-progress">
-       {isCurrentTime ? <span className="ap11-time">{formatTime(currentTime)}</span> : <span/>}
-        <div className="ap11-bar">
+      <div className="progress">
+       {isCurrentTime ? <span className="time">{formatTime(currentTime)}</span> : <span/>}
+        <div className="bar-bg">
           <div
-            className="ap11-fill"
+            className="bar-fill"
             style={{ width: `${(currentTime / duration) * 100}%` }}
           ></div>
         </div>
-       {isDurationTime ? <span className="ap11-time">{formatTime(duration)}</span> : <span/>}
+       {isDurationTime ? <span className="time">{formatTime(duration)}</span> : <span/>}
       </div>
 
-      <div className="ap11-bottom">
-        <div className="ap11-bars">
+      <div className="bottom">
+        <div className="bars">
           {[1, 2, 3, 4, 5].map((i) => (
             <div
               key={i}
-              className="ap11-bar-line"
+              className="bar-line"
               style={{ height: 10 + Math.random() * 10 }}
             ></div>
           ))}
         </div>
 
-       {isVolume ? <button className="ap11-mute" onClick={toggleMute}>
+       {isVolume ? <button className="mute" onClick={toggleMute}>
           {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
         </button> : <span/> }
       </div>

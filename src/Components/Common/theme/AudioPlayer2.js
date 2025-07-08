@@ -3,51 +3,52 @@ import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer2({ attributes }) {
-  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { item = {}, showcaseElements = {}, style = {} } = attributes || {};
+  const { size=14 } = style.controls || {};
   const { title, artist, audio:{url}, cover={} } = item;
   const { isForBack, isVolume, isCurrentTime } = showcaseElements;
   const { isPlaying, currentTime, duration, formatTime, togglePlay } = useAudio(url);
 
   return (
-      <div className="ap2">
-        <div className="ap2-cover">
+      <div className="player2 audioPlayer">
+        <div className="cover">
           <img
             src={cover.url}
             alt={title}
-            className={`ap2-img ${isPlaying ? 'spin' : ''}`}
+            className={`img ${isPlaying ? 'spin' : ''}`}
           />
         </div>
 
-        <div className="ap2-info">
-          <div className="ap2-top">
+        <div className="info">
+          <div className="top">
             <div>
-              <h3 className="ap2-title">{title}</h3>
-              <p className="ap2-artist">{artist}</p>
+              <h3 className="title">{title}</h3>
+              <p className="artist">{artist}</p>
             </div>
-            {isCurrentTime && <span className="ap2-time">{formatTime(currentTime)}</span>}
+            {isCurrentTime && <span className="time">{formatTime(currentTime)}</span>}
           </div>
 
-          <div className="ap2-bar">
+          <div className="bar-bg">
             <div
-              className="ap2-bar-fill"
+              className="bar-fill"
               style={{ width: `${(currentTime / duration) * 100}%` }}
             ></div>
           </div>
 
-          <div className="ap2-controls">
-            <div className="ap2-btns">
-              {isForBack && <button className="ap2-icon">
-                <SkipBack size={16} />
+          <div className="controls">
+            <div className="btns">
+              {isForBack && <button className="btn">
+                <SkipBack className='lucideIcn' />
               </button>}
             
-              <PlayPause {...{size:12, isPlaying, togglePlay}} />
+              <PlayPause {...{ isPlaying, togglePlay}} />
 
-              {isForBack && <button className="ap2-icon">
-                <SkipForward size={16} />
+              {isForBack && <button className="btn">
+                <SkipForward className='lucideIcn' />
               </button>}
             </div>
-            {isVolume && <div className="ap2-vol">
-              <Volume2 size={14} />
+            {isVolume && <div className="vol">
+              <Volume2  />
             </div>}
           </div>
         </div>

@@ -1,8 +1,8 @@
 import { __ } from '@wordpress/i18n';
 
 export const generalStyleTabs = [
-	{ name: 'general', title: __('General', 'textdomain') },
-	{ name: 'style', title: __('Style', 'textdomain') }
+	{ name: 'general', title: __('General', 'b-block') },
+	{ name: 'style', title: __('Style', 'b-block') }
 ];
 
 export const playerTypeOptions = [

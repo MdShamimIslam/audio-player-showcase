@@ -1,0 +1,12 @@
+1. audio player 4 a controls a kisu issue aste pare tokhn ai code add hbe:
+     ` <div className="icons">
+          {isForBack && <button className="icon">
+            <SkipBack size={18} />
+          </button>}
+          {isForBack && <button className="icon">
+            <SkipForward size={18} />
+          </button>}
+          {isVolume && <button className="icon">
+            <Volume2 size={18} />
+          </button>}
+        </div>`
