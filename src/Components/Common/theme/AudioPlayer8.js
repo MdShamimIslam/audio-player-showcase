@@ -17,7 +17,7 @@ export default function AudioPlayer8({ attributes }) {
         </div>
         <div className="icons">
           {isRefresh && <button onClick={restart} className="btn">
-            <RefreshCw size={16} />
+            <RefreshCw className='volumeIcn' />
           </button>}
           {isVolume && <button className="btn" onClick={toggleMute}>
             {isMuted ? <VolumeX className='volumeIcn' /> : <Volume2 className='volumeIcn' />}

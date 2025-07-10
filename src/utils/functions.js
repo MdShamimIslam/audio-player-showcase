@@ -138,6 +138,7 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['padding'] = "4px";
 			draft['style']['radius'] = 8;
 			draft['style']['bg'] = { "type": "gradient","gradient": "linear-gradient(to right, #facc15, #f97316, #ef4444)" };
+			draft['style']['infoBg'] = { "type": "solid","color": "#111827" };
 			draft['style']['border'] = { width: '', style: '', color: '' };
 			draft['style']['title']['typo']['fontSize']['desktop'] = 16;
 			draft['style']['title']['typo']['fontFamily'] = "inter";
@@ -242,6 +243,7 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['padding'] = "0px";
 			draft['style']['radius'] = 12;
 			draft['style']['bg'] = { "type": "solid","color": "#000000" };
+			draft['style']['infoBg'] = { "type": "gradient","gradient": "linear-gradient(to right, #ef4444, #8b5cf6)" };
 			draft['style']['border'] = { width: '', style: '', color: '' };
 			draft['style']['title']['typo']['fontSize']['desktop'] = 20;
 			draft['style']['title']['typo']['fontFamily'] = "inter";

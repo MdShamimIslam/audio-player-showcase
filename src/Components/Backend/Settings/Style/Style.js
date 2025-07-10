@@ -6,7 +6,7 @@ import { updateData } from "../../../../../../bpl-tools/utils/functions";
 
 const Style = ({ attributes, setAttributes, device }) => {
   const { style = {}, options: { playerSl } } = attributes;
-  const { width, padding, radius, bg, border, title = {}, artist = {}, thumbnail = {}, controls = {}, time = {}, range = {} } = style;
+  const { width, padding, radius, bg, infoBg, border, title = {}, artist = {}, thumbnail = {}, controls = {}, time = {}, range = {} } = style;
 
 
   return (
@@ -51,6 +51,13 @@ const Style = ({ attributes, setAttributes, device }) => {
           value={bg}
           onChange={(val) => setAttributes({ style: updateData(style, val, "bg") })}
         />
+
+        {["six", "ten"].includes(playerSl) && <Background
+          isImage={false}
+          label={__("Info Background", "b-block")}
+          value={infoBg}
+          onChange={(val) => setAttributes({ style: updateData(style, val, "infoBg") })}
+        />}
 
         <BorderControl
           className="mt15"

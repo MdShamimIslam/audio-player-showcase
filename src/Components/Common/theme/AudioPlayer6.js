@@ -10,7 +10,7 @@ export default function AudioPlayer1({ attributes }) {
 
   return (
     <div className="player6 audioPlayer">
-      <div className="info">
+      <div className="info6">
         <div className="top">
           <div>
             <h3 className="title">{title}</h3>

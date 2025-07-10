@@ -215,6 +215,7 @@ const Style = ({
     padding,
     radius,
     bg,
+    infoBg,
     border,
     title = {},
     artist = {},
@@ -227,6 +228,8 @@ const Style = ({
   const blockSl = `${mainSl} .bBlocksAudioPlayer`;
   const audioPlayerWrapperSl = `${blockSl} .audioPlayerWrapper`;
   const audioPlayerSl = `${blockSl} .audioPlayer`;
+  const banar10Sl = `${audioPlayerSl} .banner10`;
+  const info6Sl = `${audioPlayerSl} .info6`;
   const titleSl = `${audioPlayerSl} .title`;
   const artistSl = `${audioPlayerSl} .artist`;
   const timeSl = `${audioPlayerSl} .time`;
@@ -237,6 +240,8 @@ const Style = ({
   const barBgSl = `${audioPlayerSl} .bar-bg`;
   const barFillSl = `${audioPlayerSl} .bar-fill`;
   const volumeIcnSl = `${audioPlayerSl} .volumeIcn`;
+  const volumeTrackSl = `${audioPlayerSl} .vol-track`;
+  const volumeFillSl = `${audioPlayerSl} .vol-fill`;
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("style", {
     dangerouslySetInnerHTML: {
       __html: `
@@ -261,6 +266,10 @@ const Style = ({
 				${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBorderBoxCSS)(border || {})}
 				border-radius: ${radius}px;
 				padding: ${padding};
+			}
+
+			${banar10Sl}, ${info6Sl} {
+				${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getBackgroundCSS)(infoBg)};
 			}
 
 			${titleSl} {
@@ -301,11 +310,11 @@ const Style = ({
 				${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.getColorsCSS)(controls?.playPauseHovColors)}
 			}
 
-			${barBgSl} {
+			${barBgSl}, ${volumeTrackSl} {
 				background-color: ${range?.color};
 			}
 
-			${barFillSl} {
+			${barFillSl}, ${volumeFillSl} {
 				background-color: ${range?.progressColor};
 			}
 
@@ -570,7 +579,7 @@ function AudioPlayer10({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "player10 audioPlayer"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner"
+    className: "banner10"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "overlay"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1660,7 +1669,7 @@ function AudioPlayer1({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "player6 audioPlayer"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "info"
+    className: "info6"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "top"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
@@ -1880,7 +1889,7 @@ function AudioPlayer8({
     onClick: restart,
     className: "btn"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 16
+    className: "volumeIcn"
   })), isVolume && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "btn",
     onClick: toggleMute

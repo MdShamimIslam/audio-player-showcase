@@ -3,13 +3,15 @@ import { getBackgroundCSS, getBorderBoxCSS, getBoxCSS, getColorsCSS, getTypoCSS 
 
 const Style = ({ attributes, id, device="desktop" }) => {
 	const { alignment, style = {} } = attributes;
-	const { width, padding, radius, bg, border, title={}, artist={}, time={}, thumbnail={}, controls={}, range={} } = style || {};
+	const { width, padding, radius, bg, infoBg, border, title={}, artist={}, time={}, thumbnail={}, controls={}, range={} } = style || {};
 
 
 	const mainSl = `#${id}`;
 	const blockSl = `${mainSl} .bBlocksAudioPlayer`;
 	const audioPlayerWrapperSl = `${blockSl} .audioPlayerWrapper`;
 	const audioPlayerSl = `${blockSl} .audioPlayer`;
+	const banar10Sl = `${audioPlayerSl} .banner10`;
+	const info6Sl = `${audioPlayerSl} .info6`;
 	const titleSl = `${audioPlayerSl} .title`;
 	const artistSl = `${audioPlayerSl} .artist`;
 	const timeSl = `${audioPlayerSl} .time`;
@@ -20,6 +22,8 @@ const Style = ({ attributes, id, device="desktop" }) => {
 	const barBgSl = `${audioPlayerSl} .bar-bg`;
 	const barFillSl = `${audioPlayerSl} .bar-fill`;
 	const volumeIcnSl = `${audioPlayerSl} .volumeIcn`;
+	const volumeTrackSl = `${audioPlayerSl} .vol-track`;
+	const volumeFillSl = `${audioPlayerSl} .vol-fill`;
 
 
 	return <style dangerouslySetInnerHTML={{
@@ -45,6 +49,10 @@ const Style = ({ attributes, id, device="desktop" }) => {
 				${getBorderBoxCSS(border || {})}
 				border-radius: ${radius}px;
 				padding: ${padding};
+			}
+
+			${banar10Sl}, ${info6Sl} {
+				${getBackgroundCSS(infoBg)};
 			}
 
 			${titleSl} {
@@ -85,11 +93,11 @@ const Style = ({ attributes, id, device="desktop" }) => {
 				${getColorsCSS(controls?.playPauseHovColors)}
 			}
 
-			${barBgSl} {
+			${barBgSl}, ${volumeTrackSl} {
 				background-color: ${range?.color};
 			}
 
-			${barFillSl} {
+			${barFillSl}, ${volumeFillSl} {
 				background-color: ${range?.progressColor};
 			}
 

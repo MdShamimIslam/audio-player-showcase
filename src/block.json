@@ -71,6 +71,7 @@
 				"padding": "",
 				"radius":"",
 				"bg":{},
+				"infoBg":{},
 				"border": {"width": "","style": "","color": ""},
 				"title": {
 					"typo": {
