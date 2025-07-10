@@ -26,7 +26,7 @@ export default function AudioPlayer12({ attributes }) {
       <div ref={progressRef} onClick={handleProgressClick} className="bar-bg">
         <div
           className="bar-fill"
-          style={{ transform: `translateX(${-100 + (currentTime / duration) * 100}%)` }}
+          style={{ width: `${(currentTime / duration) * 100}%` }}
         ></div>
       </div>
 

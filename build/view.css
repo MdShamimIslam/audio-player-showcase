@@ -947,7 +947,6 @@
 .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .bar-bg .bar-fill {
   width: 0;
   height: 100%;
-  background: linear-gradient(to right, #db2777, #9333ea);
   border-radius: 9999px;
 }
 .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls {
@@ -1053,7 +1052,6 @@
 .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .bar-bg .bar-fill {
   width: 0;
   height: 100%;
-  background: linear-gradient(to right, #ef4444, #8b5cf6);
   border-radius: 9999px;
 }
 .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls {
@@ -1233,7 +1231,6 @@
 .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .bar-bg .bar-fill {
   width: 0;
   height: 100%;
-  background: linear-gradient(to right, #3b82f6, #8b5cf6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   transition: transform 0.3s ease;

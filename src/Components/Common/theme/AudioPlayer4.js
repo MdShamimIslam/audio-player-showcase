@@ -27,7 +27,7 @@ export default function AudioPlayer4({ attributes }) {
               className="bar-fill"
               style={{ width: `${(currentTime / duration) * 100}%` }}
             >
-              <div className="thumb"></div>
+              <div className="thumb" style={{ left: `${(currentTime / duration) * 100}%`, top: '50%' }}></div>
             </div>
           </div>
         </div>

@@ -798,7 +798,7 @@ function AudioPlayer12({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "bar-fill",
     style: {
-      transform: `translateX(${-100 + currentTime / duration * 100}%)`
+      width: `${currentTime / duration * 100}%`
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "controls"
@@ -1477,7 +1477,11 @@ function AudioPlayer4({
       width: `${currentTime / duration * 100}%`
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "thumb"
+    className: "thumb",
+    style: {
+      left: `${currentTime / duration * 100}%`,
+      top: '50%'
+    }
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "controls"
   }, isForBack && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
