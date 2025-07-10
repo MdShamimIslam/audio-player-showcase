@@ -1,12 +1,12 @@
-import { SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer4({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
-  const { title, audio:{url} } = item;
+  const { title, audio:{url},skipTime } = item;
   const { isForBack, isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
-  const {isPlaying ,togglePlay, currentTime, duration, formatTime } = useAudio(url);
+  const {isPlaying ,togglePlay, currentTime, duration, formatTime, toggleMute, isMuted, skipBackward, skipForward, progressRef, handleProgressClick  } = useAudio(url,skipTime);
 
   return (
       <div className="player4 audioPlayer">
@@ -22,7 +22,7 @@ export default function AudioPlayer4({ attributes }) {
             </span>
           </div>
 
-          <div className="bar-bg">
+          <div ref={progressRef} onClick={handleProgressClick} className="bar-bg">
             <div
               className="bar-fill"
               style={{ width: `${(currentTime / duration) * 100}%` }}
@@ -33,14 +33,14 @@ export default function AudioPlayer4({ attributes }) {
         </div>
 
         <div className="controls">
-          {isForBack && <button className="btn">
-            <SkipBack size={18} />
+          {isForBack && <button onClick={skipBackward} className="btn">
+            <SkipBack className='forbackIcn' />
           </button>}
-          {isForBack && <button className="btn">
-            <SkipForward size={18} />
+          {isForBack && <button onClick={skipForward} className="btn">
+            <SkipForward className='forbackIcn' />
           </button>}
-          {isVolume && <button className="btn">
-            <Volume2 size={18} />
+          {isVolume && <button className="btn" onClick={toggleMute} >
+            {isMuted ? <VolumeX className='volumeIcn' /> : <Volume2 className='volumeIcn' />}
           </button>}
         </div>
       </div>

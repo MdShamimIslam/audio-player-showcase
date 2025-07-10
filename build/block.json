@@ -42,7 +42,8 @@
           "id": null,
           "url": "",
           "title": ""
-        }
+        },
+        "skipTime": 5
       }
     },
     "options": {
@@ -133,6 +134,7 @@
         },
         "controls": {
           "size": "",
+          "volumeSize": "",
           "color": "",
           "hovColor": "",
           "playPauseColors": {
@@ -143,11 +145,6 @@
             "color": "",
             "bg": ""
           }
-        },
-        "volume": {
-          "size": "",
-          "color": "",
-          "hovColor": ""
         },
         "range": {
           "color": "",

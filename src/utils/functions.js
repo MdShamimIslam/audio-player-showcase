@@ -20,7 +20,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 14;
 			draft['style']['time']['typo']['fontWeight'] = 500;
 			draft['style']['time']['colors'] = { 'color': '#ffffff', 'bg': '' };
-			draft['style']['controls']['size'] = 25;
+			draft['style']['controls']['size'] = 24;
+			draft['style']['controls']['volumeSize'] = 16;
 			draft['style']['controls']['color'] = "#bfdbfe";
 			draft['style']['controls']['hovColor'] = "#ffffff";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#1d4ed8', 'bg': '#ffffff' };
@@ -48,7 +49,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['thumbnail']['height']['desktop'] = "64px";
 			draft['style']['thumbnail']['border'] = { width: '', style: '', color: '' };
 			draft['style']['thumbnail']['radius'] = { top: '6px', right: '6px', bottom: '6px', left: '6px' };
-			draft['style']['controls']['size'] = 14;
+			draft['style']['controls']['size'] = 16;
+			draft['style']['controls']['volumeSize'] = 14;
 			draft['style']['controls']['color'] = "#9ca3af";
 			draft['style']['controls']['hovColor'] = "#ffffff";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#ffffff', 'bg': '#ef4444' };
@@ -72,7 +74,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 12;
 			draft['style']['time']['typo']['fontWeight'] = "";
 			draft['style']['time']['colors'] = { 'color': '#a5b4fc', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 20;
+			draft['style']['controls']['volumeSize'] = 16;
 			draft['style']['controls']['color'] = "#a5b4fc";
 			draft['style']['controls']['hovColor'] = "#ffffff";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#ffffff', 'bg': '#782ebe' };
@@ -96,7 +99,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 12;
 			draft['style']['time']['typo']['fontWeight'] = "";
 			draft['style']['time']['colors'] = { 'color': '#6b7280', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 18;
+			draft['style']['controls']['volumeSize'] = 18;
 			draft['style']['controls']['color'] = "#9ca3af";
 			draft['style']['controls']['hovColor'] = "#4f46e5";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#fffff', 'bg': '#4f46e5' };
@@ -120,7 +124,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 14;
 			draft['style']['time']['typo']['fontWeight'] = 500;
 			draft['style']['time']['colors'] = { 'color': '#9ca3af', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 20;
+			draft['style']['controls']['volumeSize'] = 18;
 			draft['style']['controls']['color'] = "#9ca3af";
 			draft['style']['controls']['hovColor'] = "#ffffff";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#065f46', 'bg': 'rgb(34, 197, 94)' };
@@ -144,7 +149,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 12;
 			draft['style']['time']['typo']['fontWeight'] = "";
 			draft['style']['time']['colors'] = { 'color': '#9ca3af', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 22;
+			draft['style']['controls']['volumeSize'] = 16;
 			draft['style']['controls']['color'] = "";
 			draft['style']['controls']['hovColor'] = "";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#111827', 'bg': '#fbbf24' };
@@ -172,7 +178,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['thumbnail']['height']['desktop'] = "64px";
 			draft['style']['thumbnail']['border'] = { width: '', style: '', color: '' };
 			draft['style']['thumbnail']['radius'] = { top: '8px', right: '8px', bottom: '8px', left: '8px' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 17;
+			draft['style']['controls']['volumeSize'] = "";
 			draft['style']['controls']['color'] = "#6b7280";
 			draft['style']['controls']['hovColor'] = "#3b82f6";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#ffffff', 'bg': '#3b82f6' };
@@ -196,7 +203,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 14;
 			draft['style']['time']['typo']['fontWeight'] = "";
 			draft['style']['time']['colors'] = { 'color': '#34d399', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 28;
+			draft['style']['controls']['volumeSize'] = 16;
 			draft['style']['controls']['color'] = "#3ac492";
 			draft['style']['controls']['hovColor'] = "#a7f3d0";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#064e3b', 'bg': '#34d399' };
@@ -220,7 +228,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 12;
 			draft['style']['time']['typo']['fontWeight'] = "";
 			draft['style']['time']['colors'] = { 'color': '#9ca3af', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 17;
+			draft['style']['controls']['volumeSize'] = "";
 			draft['style']['controls']['color'] = "#9ca3af";
 			draft['style']['controls']['hovColor'] = "#ffffff";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#ffffff', 'bg': '#db2777' };
@@ -244,7 +253,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 12;
 			draft['style']['time']['typo']['fontWeight'] = "";
 			draft['style']['time']['colors'] = { 'color': '#9ca3af', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 20;
+			draft['style']['controls']['volumeSize'] = 20;
 			draft['style']['controls']['color'] = "#6b7280";
 			draft['style']['controls']['hovColor'] = "#ffffff";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#ffffff', 'bg': '#8b5cf6' };
@@ -268,7 +278,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 12;
 			draft['style']['time']['typo']['fontWeight'] = "";
 			draft['style']['time']['colors'] = { 'color': '#6b7280', 'bg': '' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 18;
+			draft['style']['controls']['volumeSize'] = 18;
 			draft['style']['controls']['color'] = "";
 			draft['style']['controls']['hovColor'] = "";
 			draft['style']['controls']['playPauseColors'] = { 'color': 'white', 'bg': '#f97316' };
@@ -292,7 +303,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['time']['typo']['fontSize']['desktop'] = 12;
 			draft['style']['time']['typo']['fontWeight'] = 500;
 			draft['style']['time']['colors'] = { 'color': '#ffffff', 'bg': 'rgba(255, 255, 255, 0.1)' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 24;
+			draft['style']['controls']['volumeSize'] = "";
 			draft['style']['controls']['color'] = "#93c5fd";
 			draft['style']['controls']['hovColor'] = "#ffffff";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#ffffff', 'bg': '#6139bf' };
@@ -320,7 +332,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['thumbnail']['height']['desktop'] = "64px";
 			draft['style']['thumbnail']['border'] = { width: '', style: '', color: '' };
 			draft['style']['thumbnail']['radius'] = { top: '6px', right: '6px', bottom: '6px', left: '6px' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] =15;
+			draft['style']['controls']['volumeSize'] =15;
 			draft['style']['controls']['color'] = "#9ca3af";
 			draft['style']['controls']['hovColor'] = "#4b5563";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#ffffff', 'bg': '#1f2937' };
@@ -348,7 +361,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['thumbnail']['height']['desktop'] = "48px";
 			draft['style']['thumbnail']['border'] = { width: '', style: '', color: '' };
 			draft['style']['thumbnail']['radius'] = { top: '8px', right: '8px', bottom: '8px', left: '8px' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 23;
+			draft['style']['controls']['volumeSize'] = 23;
 			draft['style']['controls']['color'] = "#6b7280";
 			draft['style']['controls']['hovColor'] = "#22d3eef";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#0f172a', 'bg': '#22d3ee' };
@@ -376,7 +390,8 @@ export const themeSwitch = (theme = '', attributes) => produce(attributes, (draf
 			draft['style']['thumbnail']['height']['desktop'] = "64px";
 			draft['style']['thumbnail']['border'] = { width: '4px', style: 'solid', color: 'white' };
 			draft['style']['thumbnail']['radius'] = { top: '9999px', right: '9999px', bottom: '9999px', left: '9999px' };
-			draft['style']['controls']['size'] = 45;
+			draft['style']['controls']['size'] = 30;
+			draft['style']['controls']['volumeSize'] = 30;
 			draft['style']['controls']['color'] = "#fbcfe8";
 			draft['style']['controls']['hovColor'] = "white";
 			draft['style']['controls']['playPauseColors'] = { 'color': '#be123c', 'bg': 'white' };

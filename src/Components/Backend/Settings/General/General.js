@@ -1,15 +1,17 @@
 import { __ } from "@wordpress/i18n";
-import { PanelBody, SelectControl, PanelRow, TextControl, ToggleControl } from "@wordpress/components";
+import { PanelBody, SelectControl, PanelRow, TextControl, ToggleControl, RangeControl } from "@wordpress/components";
 import { playerTypeOptions } from "../../../../utils/options";
 import { themeSwitch } from "../../../../utils/functions";
 import { Label, InlineDetailMediaUpload } from "../../../../../../bpl-tools/Components";
 import { updateData } from "../../../../../../bpl-tools/utils/functions";
 
+
 const General = ({ attributes, setAttributes }) => {
   const { item, options, showcaseElements } = attributes;
   const { isForBack, isVolume, isCurrentTime, isDurationTime, isBadge, isHeart, isPlaybackSpeed, isRefresh } = showcaseElements || {};
-  const { title, artist, audio={}, cover={} } = item || {};
+  const { title, artist, audio = {}, cover = {}, skipTime } = item || {};
   const { playerSl } = options || {};
+
 
   return (
     <>
@@ -22,8 +24,7 @@ const General = ({ attributes, setAttributes }) => {
           labelPosition="left"
           value={playerSl}
           options={playerTypeOptions}
-          // onChange={(v) => setAttributes({ options: updateData(options, v, 'playerSl') })}
-          onChange={(val) => setAttributes(themeSwitch(val, attributes)) }
+          onChange={(val) => setAttributes(themeSwitch(val, attributes))}
           help={__("Some settings will be change when you will change the player.", "b-blocks")}
         />
 
@@ -56,7 +57,7 @@ const General = ({ attributes, setAttributes }) => {
           <InlineDetailMediaUpload
             types={["image"]}
             value={cover}
-            onChange={(v) => setAttributes({ item: updateData(item, v, 'cover') }) }
+            onChange={(v) => setAttributes({ item: updateData(item, v, 'cover') })}
             placeholder={__("Enter Cover Image URL", "b-blocks")}
           />
         </>
@@ -64,13 +65,26 @@ const General = ({ attributes, setAttributes }) => {
       </PanelBody>
 
       <PanelBody className="bPlPanelBody" title={__("Elements", "b-blocks")} >
-        {!['six', 'eight', 'eleven'].includes(playerSl) && <ToggleControl
-          className="mt10"
-          checked={isForBack}
-          label={__("Enable Forward/Backward", "b-blocks")}
-          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isForBack") })
-          }
-        />}
+        {!['six', 'eight', 'eleven'].includes(playerSl) && <>
+          <ToggleControl
+            className="mt10"
+            checked={isForBack}
+            label={__("Enable Forward/Backward", "b-blocks")}
+            onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isForBack") })
+            }
+          />
+          {isForBack && <RangeControl
+            className="mt15"
+            label={__("Skip Time (seconds)", "b-blocks")}
+            labelPosition="left"
+            value={skipTime}
+            onChange={(val) => setAttributes({ item: updateData(item, val, "skipTime") })}
+            min={1}
+            max={60}
+            step={1}
+          />}
+        </>
+        }
 
         {!['seven', 'nine', 'twelve', 'fifteen'].includes(playerSl) && <ToggleControl
           className="mt10"
@@ -103,31 +117,31 @@ const General = ({ attributes, setAttributes }) => {
           onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isBadge") })
           }
         />}
-        
+
         {playerSl === "six" && <>
           <ToggleControl
-          className="mt10"
-          checked={isHeart}
-          label={__("Show/Hide Heart icon", "b-blocks")}
-          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isHeart") })
-          }
-        />
+            className="mt10"
+            checked={isHeart}
+            label={__("Show/Hide Heart icon", "b-blocks")}
+            onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isHeart") })
+            }
+          />
           <ToggleControl
-          className="mt10"
-          checked={isPlaybackSpeed}
-          label={__("Show/Hide Playback Speed", "b-blocks")}
-          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isPlaybackSpeed") })
-          }
-        />
+            className="mt10"
+            checked={isPlaybackSpeed}
+            label={__("Show/Hide Playback Speed", "b-blocks")}
+            onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isPlaybackSpeed") })
+            }
+          />
         </>}
         {playerSl === "eight" && <>
           <ToggleControl
-          className="mt10"
-          checked={isRefresh}
-          label={__("Show/Hide Refresh icon", "b-blocks")}
-          onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isRefresh") })
-          }
-        />
+            className="mt10"
+            checked={isRefresh}
+            label={__("Show/Hide Refresh icon", "b-blocks")}
+            onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isRefresh") })
+            }
+          />
         </>}
 
       </PanelBody>

@@ -1,4 +1,4 @@
-import { Volume2, Heart } from 'lucide-react';
+import { Volume2, Heart, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
 
@@ -6,7 +6,7 @@ export default function AudioPlayer1({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
   const { title, artist, audio: { url } } = item;
   const { isVolume, isCurrentTime, isDurationTime, isHeart, isPlaybackSpeed } = showcaseElements;
-  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
+  const { isPlaying, togglePlay, currentTime, duration, formatTime, toggleMute, isMuted, playbackRate, changePlaybackRate, progressRef, handleProgressClick } = useAudio(url);
 
   return (
     <div className="player6 audioPlayer">
@@ -22,7 +22,7 @@ export default function AudioPlayer1({ attributes }) {
         </div>
 
         <div className="progress">
-          <div className="bar-bg">
+          <div ref={progressRef} onClick={handleProgressClick} className="bar-bg">
             <div className="bar-fill" style={{ width: `${(currentTime / duration) * 100}%` }}></div>
             <div className="thumb" style={{ left: `${(currentTime / duration) * 100}%`, top: '50%' }}></div>
           </div>
@@ -34,13 +34,29 @@ export default function AudioPlayer1({ attributes }) {
         </div>
 
         <div className="controls">
-          {isVolume ? <div className="vol">
-            <Volume2 size={16} />
+          {isVolume ? <div className="vol" onClick={toggleMute}>
+            {isMuted ? <VolumeX className='volumeIcn' /> : <Volume2 className='volumeIcn' />}
           </div> : <div />}
 
-          <PlayPause {...{ size: 22, isPlaying, togglePlay }} />
+          <PlayPause {...{ isPlaying, togglePlay }} />
 
-          {isPlaybackSpeed ? <div className="speed">1.0x</div> : <div />}
+          {isPlaybackSpeed ? (
+            <div className="speed-dropdown">
+              <button className="speed-button">{playbackRate.toFixed(1)}x</button>
+              <div className="speed-options">
+                {[0.5, 0.75, 1, 1.25, 1.5, 2].map((rate) => (
+                  <div
+                    key={rate}
+                    onClick={() => changePlaybackRate(rate)}
+                    className="speed-option"
+                  >
+                    {rate}x
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : <div />}
+
         </div>
       </div>
     </div>

@@ -1,13 +1,13 @@
-import { SkipBack, SkipForward, Volume1 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume1, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
 
 
 export default function AudioPlayer5({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
-  const { title, artist, audio: { url } } = item;
+  const { title, artist, audio: { url },skipTime } = item;
   const { isForBack, isVolume, isCurrentTime, isBadge, } = showcaseElements
-  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
+  const { isPlaying, togglePlay, currentTime, duration, formatTime, toggleMute, isMuted, skipBackward, skipForward } = useAudio(url,skipTime);
 
   const generateWaveform = () => {
     return Array(50).fill(0).map(() => Math.random() * 30 + 5);
@@ -43,19 +43,19 @@ export default function AudioPlayer5({ attributes }) {
         {isCurrentTime && <div className="time">{formatTime(currentTime)}</div>}
 
         <div className="btns">
-          {isForBack && <button className="btn">
-            <SkipBack size={20} />
+          {isForBack && <button onClick={skipBackward} className="btn">
+            <SkipBack className='forbackIcn' />
           </button>}
 
-          <PlayPause {...{ size: 20, isPlaying, togglePlay }} />
+          <PlayPause {...{ isPlaying, togglePlay }} />
 
-          {isForBack && <button className="btn">
-            <SkipForward size={20} />
+          {isForBack && <button onClick={skipForward} className="btn">
+            <SkipForward className='forbackIcn' />
           </button>}
         </div>
 
-        {isVolume ? <div className="vol">
-          <Volume1 size={18} />
+        {isVolume ? <div className="vol" onClick={toggleMute} >
+            {isMuted ? <VolumeX className='volumeIcn' /> : <Volume1 className='volumeIcn' />}
         </div> : <div/>}
       </div>
     </div>

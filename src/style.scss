@@ -35,15 +35,16 @@ $primaryColor: #4527a4;
 					.artist {
 						 font-size: 0.875rem;
 						 color: #bfdbfe;
-						margin-top: -15px;
+						 margin-top: -15px;
 					}
 
 					.time {
 						 font-size: 0.875rem;
 						 font-weight: 500;
 						 color: #ffffff;
-						border-radius: 6px;
-						padding: 5px;
+						 border-radius: 6px;
+						 padding: 5px;
+
 					}
 				}
 
@@ -83,15 +84,22 @@ $primaryColor: #4527a4;
 						 	color: #ffffff;
 						 }
 					}
+					.forbackIcn{
+						width: 24px; 
+						height: 24px; 
+					}
 
 					.play {
-						padding: 8px 10px;
-						 background-color: #ffffff;
-						 color: #1d4ed8;
+						padding: 10px;
+						background-color: #ffffff;
+						color: #1d4ed8;
 						border-radius: 9999px;
 						transition: background-color 0.3s;
 						cursor: pointer;
 						border: none;
+						display: flex;
+						align-items: center;
+						justify-content: center;
 
 						 &:hover {
 						 	background-color: #dbeafe;
@@ -101,13 +109,16 @@ $primaryColor: #4527a4;
 					.vol {
 						display: flex;
 						align-items: center;
+						cursor: pointer;
 
-						.vol-icon {
+						.volumeIcn {
 							color: #bfdbfe;
 							margin-right: 0.5rem;
+							width: 16px;
+							height: 16px;
 						}
 
-						.vol-bg {
+						.vol-track {
 							width: 5rem;
 							height: 0.25rem;
 							background-color: #1e3a8a;
@@ -177,7 +188,9 @@ $primaryColor: #4527a4;
 						.time {
 							 font-size: 0.75rem;
 							 color: #9ca3af;
-							margin-top: 10px;
+							 margin-top: 10px;
+							 border-radius: 6px;
+							 padding: 5px;
 						}
 					}
 
@@ -219,8 +232,9 @@ $primaryColor: #4527a4;
 							}
 
 							.play {
-								width: 1.5rem;
-								height: 1.5rem;
+								// width: 1.5rem;
+								// height: 1.5rem;
+								padding: 5px;
 								background-color: #ef4444;
 								color: #ffffff;
 								border-radius: 9999px;
@@ -230,12 +244,22 @@ $primaryColor: #4527a4;
 								border: none;
 								cursor: pointer;
 							}
+							.forbackIcn{
+								width: 16px;
+								height: 16px;
+							}
+							
 						}
-
+						
 						.vol {
 							display: flex;
 							align-items: center;
 							color: #9ca3af;
+							cursor: pointer;
+							.volumeIcn{
+								width: 14px;
+								height: 14px;
+							}
 						}
 					}
 				}
@@ -351,6 +375,8 @@ $primaryColor: #4527a4;
 						justify-content: space-between;
 						 font-size: 0.75rem;
 						 color: #a5b4fc;
+						 border-radius: 6px;
+						 padding: 5px;
 					}
 				}
 
@@ -372,8 +398,9 @@ $primaryColor: #4527a4;
 					}
 
 					.play {
-						width: 3rem;
-						height: 3rem;
+						// width: 3rem;
+						// height: 3rem;
+						padding: 10px;
 						border-radius: 9999px;
 						background: linear-gradient(to right, #ec4899, #a855f7);
 						color: #ffffff;
@@ -384,13 +411,21 @@ $primaryColor: #4527a4;
 						cursor: pointer;
 					}
 
+					.forbackIcn{
+						width: 20px;
+						height: 20px;
+					}
+
 					.vol {
 						display: flex;
 						align-items: center;
 						color: #a5b4fc;
+						cursor: pointer;
 
-						.vol-icon {
+						.volumeIcn {
 							margin-right: 0.5rem;
+							width: 16px;
+							height: 16px;
 						}
 
 						.vol-track {
@@ -433,8 +468,9 @@ $primaryColor: #4527a4;
 					box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 
 					.play {
-						width: 2.5rem;
-						height: 2.5rem;
+						// width: 2.5rem;
+						// height: 2.5rem;
+						padding: 10px;
 						background-color: #4f46e5;
 						border-radius: 9999px;
 						display: flex;
@@ -462,6 +498,8 @@ $primaryColor: #4527a4;
 								 font-size: 0.75rem;
 								 color: #6b7280;
 								margin-top: 15px;
+								border-radius: 6px;
+							 padding: 5px;
 							}
 						}
 
@@ -510,6 +548,10 @@ $primaryColor: #4527a4;
 
 							&:hover {
 								color: #4f46e5;
+							}
+							.forbackIcn, .volumeIcn{
+								width: 18px;
+								height: 18px;
 							}
 						}
 					}
@@ -574,6 +616,8 @@ $primaryColor: #4527a4;
 					 	font-size: 0.875rem;
 					 	font-weight: 500;
 					 	color: #9ca3af;
+						border-radius: 6px;
+						padding: 5px;
 					 }
 
 					.btns {
@@ -594,8 +638,9 @@ $primaryColor: #4527a4;
 						}
 
 						.play {
-							width: 2.5rem;
-							height: 2.5rem;
+							// width: 2.5rem;
+							// height: 2.5rem;
+							padding: 10px;
 							background-color: rgb(34, 197, 94);
 							color: #065f46;
 							border-radius: 9999px;
@@ -604,6 +649,10 @@ $primaryColor: #4527a4;
 							justify-content: center;
 							border: none;
 							cursor: pointer;
+						}
+						.forbackIcn{
+							width: 20px;
+							height: 20px;
 						}
 					}
 
@@ -615,6 +664,10 @@ $primaryColor: #4527a4;
 
 						&:hover {
 							color: #ffffff;
+						}
+						.volumeIcn{
+							width: 18px;	
+							height: 18px;
 						}
 					}
 				}
@@ -693,9 +746,11 @@ $primaryColor: #4527a4;
 						.time {
 							display: flex;
 							justify-content: space-between;
-							 font-size: 0.75rem;
-							 color: #9ca3af;
+							font-size: 0.75rem;
+							color: #9ca3af;
 							margin-top: 0.5rem;
+							border-radius: 6px;
+							padding: 5px;
 						}
 					}
 
@@ -707,11 +762,16 @@ $primaryColor: #4527a4;
 						.vol {
 							color: #fbbf24;
 							cursor: pointer;
+							.volumeIcn{
+								width: 16px;
+								height: 16px;
+							}
 						}
 
 						.play {
-							width: 3rem;
-							height: 3rem;
+							// width: 3rem;
+							// height: 3rem;
+							padding: 10px;
 							background-color: #fbbf24;
 							color: #111827;
 							border-radius: 9999px;
@@ -728,14 +788,55 @@ $primaryColor: #4527a4;
 							}
 						}
 
-						.speed {
-							font-size: 0.75rem;
-							font-weight: 600;
-							color: #fbbf24;
-							padding: 0.25rem 0.5rem;
-							border: 1px solid rgba(251, 191, 36, 0.3); 
-							border-radius: 9999px;
+						.forbackIcn{
+							width: 22px;
+							height: 22px;
 						}
+
+						.speed-dropdown {
+							position: relative;
+							display: inline-block;
+						  
+							.speed-button {
+							  	background-color: transparent;
+								font-size: 0.75rem;
+								font-weight: 600;
+								color: #fbbf24;
+								padding: 0.25rem 0.5rem;
+								border: 1px solid rgba(251, 191, 36, 0.3); 
+								border-radius: 9999px;
+							}
+						  
+							.speed-options {
+							  display: none;
+							  position: absolute;
+							  bottom: -50%;
+							  left: 50%;
+							  transform: translateX(-50%);
+							  background-color: white;
+							  color: black;
+							  border: 1px solid #ccc;
+							  border-radius: 4px;
+							  min-width: 60px;
+							  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+							  z-index: 1000;
+							}
+						  
+							&:hover .speed-options {
+							  display: block;
+							}
+						  
+							.speed-option {
+							  padding: 6px 10px;
+							  font-size: 13px;
+							  cursor: pointer;
+						  
+							  &:hover {
+								background-color: #f0f0f0;
+							  }
+							}
+						  }
+						  
 					}
 				}
 			}
@@ -802,8 +903,9 @@ $primaryColor: #4527a4;
 						}
 
 						.play {
-							width: 2rem;
-							height: 2rem;
+							// width: 2rem;
+							// height: 2rem;
+							padding: 6px;
 							background-color: #3b82f6;
 							color: #ffffff;
 							border-radius: 9999px;
@@ -821,6 +923,10 @@ $primaryColor: #4527a4;
 							.ml-05 {
 								margin-left: 0.125rem;
 							}
+						}
+						.forbackIcn{
+							width: 17px;
+							height: 17px;
 						}
 
 						.bar-bg {
@@ -840,6 +946,8 @@ $primaryColor: #4527a4;
 						 .time {
 						 	font-size: 0.875rem;
 						 	color: #6b7280;
+							border-radius: 6px;
+							padding: 5px;
 						 }
 					}
 				}
@@ -885,6 +993,11 @@ $primaryColor: #4527a4;
 							&:hover {
 								color: #a7f3d0;
 							}
+
+							.volumeIcn{
+								width: 16px;
+								height: 16px;
+							}
 						}
 					}
 				}
@@ -924,6 +1037,8 @@ $primaryColor: #4527a4;
 						font-size: 0.75rem;
 						color: #34d399;
 						margin-top: 10px;
+						border-radius: 6px;
+						padding: 5px;
 					}
 				}
 
@@ -932,8 +1047,9 @@ $primaryColor: #4527a4;
 					justify-content: center;
 
 					.play {
-						width: 4rem;
-						height: 4rem;
+						// width: 4rem;
+						// height: 4rem;
+						padding: 10px;
 						background-color: #34d399;
 						color: #064e3b;
 						border-radius: 9999px;
@@ -947,7 +1063,12 @@ $primaryColor: #4527a4;
 						&:hover {
 							background-color: #6ee7b7;
 						}
+						.forbackIcn{
+							width: 28px;
+							height: 28px;
+						}
 					}
+					
 				}
 			}
 			//  audio player 9
@@ -1015,6 +1136,8 @@ $primaryColor: #4527a4;
 					 .time {
 					 	font-size: 0.75rem;
 					 	color: #9ca3af;
+						border-radius: 6px;
+						padding: 5px;
 					 }
 
 					.buttons {
@@ -1032,11 +1155,16 @@ $primaryColor: #4527a4;
 							&:hover {
 								color: #ffffff;
 							}
+							.forbackIcn{
+								width: 17px;
+								height: 17px;
+							}
 						}
 
 						.play {
-							width: 2rem;
-							height: 2rem;
+							// width: 2rem;
+							// height: 2rem;
+							padding: 6px;
 							background-color: #db2777;
 							color: #ffffff;
 							border-radius: 9999px;
@@ -1102,9 +1230,11 @@ $primaryColor: #4527a4;
 					.time {
 						display: flex;
 						justify-content: space-between;
-						 font-size: 0.75rem;
-						 color: #9ca3af;
+						font-size: 0.75rem;
+						color: #9ca3af;
 						margin-bottom: 0.5rem;
+						border-radius: 6px;
+						padding: 5px;
 					}
 
 					.bar-bg {
@@ -1137,6 +1267,10 @@ $primaryColor: #4527a4;
 							&:hover {
 								color: #ffffff;
 							}
+							.volumeIcn{
+								width: 20px;
+								height: 20px;
+							}
 						}
 
 						.main {
@@ -1146,8 +1280,9 @@ $primaryColor: #4527a4;
 						}
 
 						.play {
-							width: 3rem;
-							height: 3rem;
+							// width: 3rem;
+							// height: 3rem;
+							padding: 10px;
 							border-radius: 9999px;
 							background: linear-gradient(to right, #ef4444, #8b5cf6);
 							color: #ffffff;
@@ -1156,6 +1291,11 @@ $primaryColor: #4527a4;
 							justify-content: center;
 							border: none;
 							cursor: pointer;
+						}
+
+						.forbackIcn{
+							width: 20px;
+							height: 20px;
 						}
 
 						.spacer {
@@ -1179,8 +1319,9 @@ $primaryColor: #4527a4;
 					gap: 1rem;
 
 					.play {
-						width: 2.5rem;
-						height: 2.5rem;
+						// width: 2.5rem;
+						// height: 2.5rem;
+						padding: 10px;
 						background-color: #f97316;
 						border-radius: 0.375rem;
 						color: white;
@@ -1189,6 +1330,11 @@ $primaryColor: #4527a4;
 						justify-content: center;
 						border: none;
 						cursor: pointer;
+
+						.forbackIcn{
+							width: 18px;
+							height: 18px;
+						}
 					}
 
 					 .title {
@@ -1210,9 +1356,11 @@ $primaryColor: #4527a4;
 					margin-bottom: 0.75rem;
 
 					.time {
-						 font-size: 0.75rem;
-						 color: #6b7280;
+						font-size: 0.75rem;
+						color: #6b7280;
 						margin: 0 0.5rem;
+						border-radius: 6px;
+						padding: 5px;
 					}
 
 					.bar-bg {
@@ -1256,6 +1404,10 @@ $primaryColor: #4527a4;
 						&:hover {
 							color: #f97316;
 						}
+						.volumeIcn{
+							width: 18px;
+							height: 18px;
+						}
 					}
 				}
 			}
@@ -1291,9 +1443,9 @@ $primaryColor: #4527a4;
 						backdrop-filter: blur(4px);
 						border-radius: 6px;
 						padding: 5px;
-						 	color: #ffffff;
-						 	font-size: 0.75rem;
-						 	font-weight: 500;
+						color: #ffffff;
+						font-size: 0.75rem;
+						font-weight: 500;
 						
 					}
 				}
@@ -1334,8 +1486,9 @@ $primaryColor: #4527a4;
 					}
 
 					.play {
-						width: 3.5rem;
-						height: 3.5rem;
+						// width: 3.5rem;
+						// height: 3.5rem;
+						padding: 12px;
 						border-radius: 9999px;
 						background: linear-gradient(to right, #3b82f6, #8b5cf6);
 						color: #ffffff;
@@ -1345,7 +1498,11 @@ $primaryColor: #4527a4;
 						box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 						border: none;
 						cursor: pointer;
+					}
 
+					.forbackIcn{
+						width: 24px;
+						height: 24px;
 					}
 				}
 			}
@@ -1427,9 +1584,11 @@ $primaryColor: #4527a4;
 					display: flex;
 					align-items: center;
 					margin-top: 0.25rem;
-					 font-size: 0.75rem;
-					 color: #6b7280;
+					font-size: 0.75rem;
+					color: #6b7280;
 					margin-top: -13px;
+					border-radius: 6px;
+					padding: 5px;
 			
 					.sep {
 					margin: 0 0.25rem;
@@ -1458,9 +1617,9 @@ $primaryColor: #4527a4;
 				}
 			
 				.controls {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
 			
 				.btn {
 					color: #9ca3af; 
@@ -1475,8 +1634,9 @@ $primaryColor: #4527a4;
 				}
 			
 				.play {
-					width: 2rem;
-					height: 2rem;
+					// width: 2rem;
+					// height: 2rem;
+					padding: 8px;
 					background-color: #1f2937;
 					color: #ffffff;
 					border-radius: 9999px;
@@ -1489,11 +1649,12 @@ $primaryColor: #4527a4;
 
 			
 					&:hover {
-					background-color: #374151; 
+						background-color: #374151; 
 					}
 			
-					.ml-05 {
-					margin-left: 0.125rem;
+					.forbackIcn, .volumeIcn{
+						width: 15px;
+						height: 15px;
 					}
 				}
 				}
@@ -1563,6 +1724,8 @@ $primaryColor: #4527a4;
 					 .time {
 						 color: #9ca3af; 
 						 font-size: 0.75rem;
+						 border-radius: 6px;
+						 padding: 5px;
 					 }
 				}
 			
@@ -1598,8 +1761,9 @@ $primaryColor: #4527a4;
 				}
 			
 				.play {
-					width: 3.5rem;
-					height: 3.5rem;
+					// width: 3.5rem;
+					// height: 3.5rem;
+					padding: 13px;
 					background-color: #22d3ee;
 					color: #0f172a; 
 					border-radius: 9999px;
@@ -1612,6 +1776,10 @@ $primaryColor: #4527a4;
 			
 					&:hover {
 					background-color: #67e8f9;
+					}
+					.forbackIcn,.volumeIcn{
+						width: 23px;
+						height: 23px;
 					}
 				}
 				}
@@ -1685,9 +1853,11 @@ $primaryColor: #4527a4;
 					.time {
 						display: flex;
 						justify-content: space-between;
-						 font-size: 0.875rem;
-						 color: #fbcfe8; 
+						font-size: 0.875rem;
+						color: #fbcfe8; 
 						margin-top: 0.5rem;
+						border-radius: 6px;
+						padding: 5px;
 					}
 				}
 			
@@ -1710,21 +1880,27 @@ $primaryColor: #4527a4;
 					}
 				
 					.play {
-					width: 4rem;
-					height: 4rem;
-					background-color: white;
-					color: #be123c; 
-					border-radius: 9999px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					transition: background-color 0.2s;
-					border: none;
-					cursor: pointer;
+						// width: 4rem;
+						// height: 4rem;
+						padding: 12px;
+						background-color: white;
+						color: #be123c; 
+						border-radius: 9999px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						transition: background-color 0.2s;
+						border: none;
+						cursor: pointer;
 				
 					&:hover {
 						background-color: #ffe4e6; 
 					}
+					
+					}
+					.forbackIcn{
+						width: 30px;
+						height: 30px;
 					}
 				}
 			}

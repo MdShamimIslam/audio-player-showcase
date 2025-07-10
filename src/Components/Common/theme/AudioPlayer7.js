@@ -4,9 +4,9 @@ import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer7({attributes}) {
   const { item = {}, showcaseElements = {} } = attributes || {};
-  const { title, artist, cover, audio:{url} } = item;
+  const { title, artist, cover, audio:{url},skipTime } = item;
   const { isForBack, isCurrentTime } = showcaseElements;
-  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
+  const { isPlaying, togglePlay, currentTime, duration, formatTime, skipBackward, skipForward, progressRef, handleProgressClick } = useAudio(url,skipTime);
 
   return (
       <div className="player7 audioPlayer">
@@ -19,17 +19,17 @@ export default function AudioPlayer7({attributes}) {
           <p className="artist">{artist}</p>
 
           <div className="controls">
-          {isForBack && <button className="btn">
-              <SkipBack size={18} />
+          {isForBack && <button onClick={skipBackward} className="btn">
+              <SkipBack className='forbackIcn' />
             </button> }  
 
-            <PlayPause {...{size:16, isPlaying, togglePlay}} />
+            <PlayPause {...{ isPlaying, togglePlay}} />
 
-           {isForBack && <button className="btn">
-              <SkipForward size={18} />
+           {isForBack && <button onClick={skipForward} className="btn">
+              <SkipForward className='forbackIcn' />
             </button> } 
 
-            <div className="bar-bg">
+            <div ref={progressRef} onClick={handleProgressClick} className="bar-bg">
               <div
                 className="bar-fill"
                 style={{ width: `${(currentTime / duration) * 100}%` }}

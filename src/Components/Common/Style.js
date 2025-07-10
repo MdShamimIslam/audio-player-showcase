@@ -14,11 +14,12 @@ const Style = ({ attributes, id, device="desktop" }) => {
 	const artistSl = `${audioPlayerSl} .artist`;
 	const timeSl = `${audioPlayerSl} .time`;
 	const thumbnailSl = `${audioPlayerSl} .cover`;
-	const forwardBackwardSl = `${audioPlayerSl} .btn`;
-	const lucideIcnSl = `${audioPlayerSl} .lucideIcn`;
+	const forwardBackwardBtnSl = `${audioPlayerSl} .btn`;
+	const forBackPlayPauseSl = `${audioPlayerSl} .forbackIcn`;
 	const playPauseSl = `${audioPlayerSl} .play`;
 	const barBgSl = `${audioPlayerSl} .bar-bg`;
 	const barFillSl = `${audioPlayerSl} .bar-fill`;
+	const volumeIcnSl = `${audioPlayerSl} .volumeIcn`;
 
 
 	return <style dangerouslySetInnerHTML={{
@@ -65,14 +66,14 @@ const Style = ({ attributes, id, device="desktop" }) => {
 				border-radius: ${getBoxCSS(thumbnail.radius || {})};
 			}
 
-			${forwardBackwardSl} {
+			${forwardBackwardBtnSl} {
 				color: ${controls?.color};
 			}
-			${forwardBackwardSl}:hover {
+			${forwardBackwardBtnSl}:hover {
 				color: ${controls?.hovColor};
 			}
 
-			${lucideIcnSl} {
+			${forBackPlayPauseSl} {
 				width: ${controls?.size}px;
 				height: ${controls?.size}px;
 			}
@@ -90,6 +91,15 @@ const Style = ({ attributes, id, device="desktop" }) => {
 
 			${barFillSl} {
 				background-color: ${range?.progressColor};
+			}
+
+			${volumeIcnSl} {
+				width: ${controls?.volumeSize}px;
+				height: ${controls?.volumeSize}px;
+				color: ${controls?.color};
+			}
+			${volumeIcnSl}:hover {
+				color: ${controls?.hovColor};
 			}
 
 

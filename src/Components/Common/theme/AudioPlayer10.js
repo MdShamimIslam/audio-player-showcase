@@ -1,12 +1,12 @@
-import { SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer10({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
-  const { title, artist, audio: { url } } = item;
+  const { title, artist, audio: { url }, skipTime } = item;
   const { isForBack, isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
-  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
+  const { isPlaying, togglePlay, currentTime, duration, formatTime, toggleMute, isMuted, skipBackward, skipForward, progressRef, handleProgressClick } = useAudio(url,skipTime);
 
   return (
     <div className="player10 audioPlayer">
@@ -24,7 +24,7 @@ export default function AudioPlayer10({ attributes }) {
           {isDurationTime ? <span>{formatTime(duration)}</span> : <span />}
         </div>
 
-        <div className="bar-bg">
+        <div ref={progressRef} onClick={handleProgressClick} className="bar-bg">
           <div
             className="bar-fill"
             style={{ width: `${(currentTime / duration) * 100}%` }}
@@ -32,19 +32,19 @@ export default function AudioPlayer10({ attributes }) {
         </div>
 
         <div className="controls">
-          {isVolume ? <button className="btn">
-            <Volume2 size={20} />
+          {isVolume ? <button className="btn" onClick={toggleMute}>
+            {isMuted ? <VolumeX className='volumeIcn' /> : <Volume2 className='volumeIcn' />}
           </button> : <span />}
 
           <div className="main">
-            {isForBack && <button className="btn">
-              <SkipBack size={20} />
+            {isForBack && <button onClick={skipBackward} className="btn">
+              <SkipBack className='forbackIcn' />
             </button>}
 
-            <PlayPause {...{ size: 20, isPlaying, togglePlay }} />
+            <PlayPause {...{ isPlaying, togglePlay }} />
 
-            {isForBack && <button className="btn">
-              <SkipForward size={20} />
+            {isForBack && <button onClick={skipForward} className="btn">
+              <SkipForward className='forbackIcn' />
             </button>}
           </div>
 

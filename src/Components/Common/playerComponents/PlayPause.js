@@ -4,7 +4,7 @@ const PlayPause = ({ isPlaying, togglePlay }) => {
 
     return (
         <button className="play" onClick={togglePlay}>
-            {isPlaying ? <Pause className="lucideIcn" /> : <Play className="lucideIcn" />}
+            {isPlaying ? <Pause className="forbackIcn" /> : <Play className="forbackIcn" />}
         </button>
     )
 }

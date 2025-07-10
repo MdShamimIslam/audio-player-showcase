@@ -1,13 +1,12 @@
-import { SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
 
 export default function AudioPlayer2({ attributes }) {
-  const { item = {}, showcaseElements = {}, style = {} } = attributes || {};
-  const { size=14 } = style.controls || {};
-  const { title, artist, audio:{url}, cover={} } = item;
+  const { item = {}, showcaseElements = {} } = attributes || {};
+  const { title, artist, audio:{url}, cover={}, skipTime } = item;
   const { isForBack, isVolume, isCurrentTime } = showcaseElements;
-  const { isPlaying, currentTime, duration, formatTime, togglePlay } = useAudio(url);
+  const { isPlaying, currentTime, duration, formatTime, togglePlay, toggleMute, isMuted, skipBackward, skipForward, progressRef, handleProgressClick } = useAudio(url,skipTime);
 
   return (
       <div className="player2 audioPlayer">
@@ -28,7 +27,7 @@ export default function AudioPlayer2({ attributes }) {
             {isCurrentTime && <span className="time">{formatTime(currentTime)}</span>}
           </div>
 
-          <div className="bar-bg">
+          <div ref={progressRef} onClick={handleProgressClick} className="bar-bg">
             <div
               className="bar-fill"
               style={{ width: `${(currentTime / duration) * 100}%` }}
@@ -37,18 +36,18 @@ export default function AudioPlayer2({ attributes }) {
 
           <div className="controls">
             <div className="btns">
-              {isForBack && <button className="btn">
-                <SkipBack className='lucideIcn' />
+              {isForBack && <button onClick={skipBackward} className="btn">
+                <SkipBack className='forbackIcn' />
               </button>}
             
               <PlayPause {...{ isPlaying, togglePlay}} />
 
-              {isForBack && <button className="btn">
-                <SkipForward className='lucideIcn' />
+              {isForBack && <button onClick={skipForward} className="btn">
+                <SkipForward className='forbackIcn' />
               </button>}
             </div>
-            {isVolume && <div className="vol">
-              <Volume2  />
+            {isVolume && <div className="vol" onClick={toggleMute}>
+              {isMuted ? <VolumeX className='volumeIcn' /> : <Volume2 className='volumeIcn' />}
             </div>}
           </div>
         </div>

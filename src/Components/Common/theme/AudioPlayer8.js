@@ -1,4 +1,4 @@
-import { RefreshCw, Volume2 } from 'lucide-react';
+import { RefreshCw, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
 
@@ -6,7 +6,7 @@ export default function AudioPlayer8({ attributes }) {
   const { item = {}, showcaseElements = {} } = attributes || {};
   const { title, artist, audio: { url } } = item;
   const { isVolume, isCurrentTime, isDurationTime, isRefresh } = showcaseElements;
-  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
+  const { isPlaying, togglePlay, currentTime, duration, formatTime, toggleMute, isMuted, restart, progressRef, handleProgressClick } = useAudio(url);
 
   return (
     <div className="player8 audioPlayer">
@@ -16,17 +16,17 @@ export default function AudioPlayer8({ attributes }) {
           <p className="artist">{artist}</p>
         </div>
         <div className="icons">
-          {isRefresh && <button className="btn">
+          {isRefresh && <button onClick={restart} className="btn">
             <RefreshCw size={16} />
           </button>}
-          {isVolume && <button className="btn">
-            <Volume2 size={16} />
+          {isVolume && <button className="btn" onClick={toggleMute}>
+            {isMuted ? <VolumeX className='volumeIcn' /> : <Volume2 className='volumeIcn' />}
           </button>}
         </div>
       </div>
 
       <div className="progress">
-        <div className="bar-bg">
+        <div ref={progressRef} onClick={handleProgressClick} className="bar-bg">
           <div
             className="bar-fill"
             style={{ width: `${(currentTime / duration) * 100}%` }}
@@ -46,7 +46,7 @@ export default function AudioPlayer8({ attributes }) {
       </div>
 
       <div className="controls">
-        <PlayPause {...{ size: 28, isPlaying, togglePlay }} />
+        <PlayPause {...{ isPlaying, togglePlay }} />
       </div>
     </div>
   );

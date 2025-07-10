@@ -14,6 +14,7 @@ const Style = ({ attributes, setAttributes, device }) => {
       <PanelBody
         className="bPlPanelBody"
         title={__("Player Wrapper", "b-block")}
+        initialOpen={false}
       >
         <PanelRow>
           <Label className="">{__("Width", "b-block")}</Label>
@@ -174,9 +175,17 @@ const Style = ({ attributes, setAttributes, device }) => {
           value={controls.size}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "size") })}
           min={10}
-          max={100} 
+          max={100}
           step={1}
         />
+        {!["seven", "nine", "twelve", "fifteen"].includes(playerSl) && <RangeControl
+          label={__("Volume Size", "b-block")}
+          value={controls.volumeSize}
+          onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "volumeSize") })}
+          min={10}
+          max={50}
+          step={1}
+        />}
 
         <ColorControl
           className="mt20"
@@ -200,13 +209,13 @@ const Style = ({ attributes, setAttributes, device }) => {
 
         <ColorsControl
           className="mb20"
-          label={__("Play & Pause Hover Colors", "b-block")}
+          label={__("Play & Pause Hover", "b-block")}
           value={controls.playPauseHovColors}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "playPauseHovColors") })}
         />
       </PanelBody>
 
-      <PanelBody
+      {playerSl !== "five" && <PanelBody
         className="bPlPanelBody"
         title={__("Range", "b-block")}
         initialOpen={false}
@@ -224,7 +233,7 @@ const Style = ({ attributes, setAttributes, device }) => {
           onChange={(val) => setAttributes({ style: updateData(style, val, "range", "progressColor") })}
         />
 
-      </PanelBody>
+      </PanelBody>}
 
     </>
   );

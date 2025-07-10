@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from '../../../hooks/useAudio';
 import PlayPause from '../playerComponents/PlayPause';
@@ -7,16 +6,14 @@ export default function AudioPlayer11({attributes}) {
   const { item = {}, showcaseElements = {} } = attributes || {};
   const { title, artist, audio: { url } } = item;
   const { isVolume, isCurrentTime, isDurationTime, } = showcaseElements;
-  const { isPlaying, togglePlay, currentTime, duration, formatTime } = useAudio(url);
-  const [isMuted, setIsMuted] = useState(false);
-
-  const toggleMute = () => setIsMuted(!isMuted);
+  const { isPlaying, togglePlay, currentTime, duration, formatTime, toggleMute, isMuted, progressRef, handleProgressClick } = useAudio(url);
+ 
 
   return (
     <div className="player11 audioPlayer">
       <div className="top">
 
-      <PlayPause {...{size:18, isPlaying, togglePlay}} />
+      <PlayPause {...{ isPlaying, togglePlay}} />
 
         <div>
           <h3 className="title">{title}</h3>
@@ -28,6 +25,7 @@ export default function AudioPlayer11({attributes}) {
        {isCurrentTime ? <span className="time">{formatTime(currentTime)}</span> : <span/>}
         <div className="bar-bg">
           <div
+          ref={progressRef} onClick={handleProgressClick}
             className="bar-fill"
             style={{ width: `${(currentTime / duration) * 100}%` }}
           ></div>
@@ -47,7 +45,7 @@ export default function AudioPlayer11({attributes}) {
         </div>
 
        {isVolume ? <button className="mute" onClick={toggleMute}>
-          {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+          {isMuted ? <VolumeX className='volumeIcn' /> : <Volume2 className='volumeIcn' />}
         </button> : <span/> }
       </div>
     </div>
