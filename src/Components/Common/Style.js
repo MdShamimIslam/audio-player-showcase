@@ -1,5 +1,5 @@
 import { mobileBreakpoint, tabBreakpoint } from '../../../../bpl-tools/utils/data';
-import { getBackgroundCSS, getBorderBoxCSS, getBoxCSS, getColorsCSS, getTypoCSS } from '../../../../bpl-tools/utils/getCSS';
+import { getBackgroundCSS, getBorderBoxCSS, getBoxCSS, getColorsCSS, getTypoCSS, isValidCSS } from '../../../../bpl-tools/utils/getCSS';
 
 const Style = ({ attributes, id, device="desktop" }) => {
 	const { alignment, style = {} } = attributes;
@@ -25,6 +25,7 @@ const Style = ({ attributes, id, device="desktop" }) => {
 	const volumeTrackSl = `${audioPlayerSl} .vol-track`;
 	const volumeFillSl = `${audioPlayerSl} .vol-fill`;
 
+	console.log(controls?.hovColor);
 
 	return <style dangerouslySetInnerHTML={{
 		__html: `
@@ -104,7 +105,7 @@ const Style = ({ attributes, id, device="desktop" }) => {
 			${volumeIcnSl} {
 				width: ${controls?.volumeSize}px;
 				height: ${controls?.volumeSize}px;
-				color: ${controls?.color};
+				${isValidCSS('color',controls.color)}
 			}
 			${volumeIcnSl}:hover {
 				color: ${controls?.hovColor};

@@ -10,6 +10,7 @@ $primaryColor: #4527a4;
 }
 
 .wp-block-b-blocks-audio-player-showcase{
+	
 	.theme-preview-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -36,6 +37,9 @@ $primaryColor: #4527a4;
 			  font-family: "inter";
 		  }
 		}
-	  } 
+	} 
+	.bBlocksAudioPlayer .audioPlayer .volumeIcn{
+			pointer-events: unset;
+	}
 	  
 }

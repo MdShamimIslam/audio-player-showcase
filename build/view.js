@@ -242,6 +242,7 @@ const Style = ({
   const volumeIcnSl = `${audioPlayerSl} .volumeIcn`;
   const volumeTrackSl = `${audioPlayerSl} .vol-track`;
   const volumeFillSl = `${audioPlayerSl} .vol-fill`;
+  console.log(controls?.hovColor);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("style", {
     dangerouslySetInnerHTML: {
       __html: `
@@ -321,7 +322,7 @@ const Style = ({
 			${volumeIcnSl} {
 				width: ${controls?.volumeSize}px;
 				height: ${controls?.volumeSize}px;
-				color: ${controls?.color};
+				${(0,_bpl_tools_utils_getCSS__WEBPACK_IMPORTED_MODULE_2__.isValidCSS)('color', controls.color)}
 			}
 			${volumeIcnSl}:hover {
 				color: ${controls?.hovColor};
@@ -3648,9 +3649,11 @@ document.addEventListener('DOMContentLoaded', () => {
       id: blockNameEl.id
     }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "bBlocksAudioPlayer"
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "audioPlayerWrapper"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Components_Common_theme_theme__WEBPACK_IMPORTED_MODULE_4__["default"], {
       attributes
-    }))));
+    })))));
     blockNameEl?.removeAttribute('data-attributes');
   });
 });

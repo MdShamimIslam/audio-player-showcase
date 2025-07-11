@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			<Style attributes={attributes} id={blockNameEl.id} />
 
 			<div className="bBlocksAudioPlayer">
-				<Theme {...{ attributes }} />
+				<div className="audioPlayerWrapper">
+					<Theme {...{ attributes }} />
+				</div>
 			</div>
 
 		</>);
