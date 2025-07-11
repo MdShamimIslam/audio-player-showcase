@@ -4,6 +4,7 @@ import { playerTypeOptions } from "../../../../utils/options";
 import { themeSwitch } from "../../../../utils/functions";
 import { Label, InlineDetailMediaUpload } from "../../../../../../bpl-tools/Components";
 import { updateData } from "../../../../../../bpl-tools/utils/functions";
+import { produce } from "immer";
 
 
 const General = ({ attributes, setAttributes }) => {
@@ -11,7 +12,6 @@ const General = ({ attributes, setAttributes }) => {
   const { isForBack, isVolume, isCurrentTime, isDurationTime, isBadge, isHeart, isPlaybackSpeed, isRefresh } = showcaseElements || {};
   const { title, artist, audio = {}, cover = {}, skipTime } = item || {};
   const { playerSl } = options || {};
-
 
   return (
     <>
@@ -36,20 +36,29 @@ const General = ({ attributes, setAttributes }) => {
           />
         </PanelRow>
 
-        <PanelRow>
+        {playerSl !== "four" && <PanelRow>
           <Label className="">{__("Artist:", "b-blocks")}</Label>
           <TextControl
             value={artist}
             onChange={(v) => setAttributes({ item: updateData(item, v, 'artist') })}
           />
-        </PanelRow>
+        </PanelRow>}
 
         <Label>{__("Audio File:", "b-blocks")}</Label>
         <InlineDetailMediaUpload
           types={["audio"]}
           value={audio}
-          onChange={(v) => setAttributes({ item: updateData(item, v, 'audio') })}
+          onChange={(v) => {
+            setAttributes({
+              item: produce(item, (draft) => {
+                draft.audio = v;
+                draft.title = v.title;
+                draft.artist = v.meta.artist;
+              })
+            })
+          }}
           placeholder={__("Enter Audio URL", "b-blocks")}
+          isMeta={true}
         />
 
         {["two", "seven", "thirteen", "fourteen", "fifteen"].includes(playerSl) && <>
