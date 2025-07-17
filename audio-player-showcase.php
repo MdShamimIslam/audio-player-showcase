@@ -26,7 +26,6 @@ if( !class_exists( 'PREFIXPlugin' ) ){
 
 		function onInit(){
 			register_block_type( __DIR__ . '/build' );
-
 		}
 	}
 	new PREFIXPlugin();

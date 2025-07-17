@@ -1,11 +1,10 @@
 import { __ } from '@wordpress/i18n';
 import { InspectorControls, BlockControls, AlignmentToolbar } from '@wordpress/block-editor';
 import { TabPanel } from '@wordpress/components';
-import { tabController } from '../../../../../Components/utils/functions';
 import { generalStyleTabs } from '../../../utils/options';
 import General from './General/General';
 import Style from './Style/Style';
-import { updateData } from '../../../../../bpl-tools/utils/functions';
+import { tabController, updateData } from '../../../../../bpl-tools/utils/functions';
 
 
 const Settings = ({ attributes, setAttributes, device }) => {
