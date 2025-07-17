@@ -1,8 +1,8 @@
 import { __ } from '@wordpress/i18n';
 
 export const generalStyleTabs = [
-	{ name: 'general', title: __('General', 'b-block') },
-	{ name: 'style', title: __('Style', 'b-block') }
+	{ name: 'general', title: __('General', 'audio-player-showcase') },
+	{ name: 'style', title: __('Style', 'audio-player-showcase') }
 ];
 
 export const playerTypeOptions = [

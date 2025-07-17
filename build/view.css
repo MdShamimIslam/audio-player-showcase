@@ -1,52 +1,52 @@
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
-.wp-block-b-blocks-audio-player-showcase {
+.wp-block-aps-audio-player-showcase {
   box-sizing: border-box;
 }
-.wp-block-b-blocks-audio-player-showcase * {
+.wp-block-aps-audio-player-showcase * {
   box-sizing: border-box;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer {
   display: flex;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper {
   min-width: 250px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 {
   background: linear-gradient(to right, #1e40af, #2563eb);
   border-radius: 0.75rem;
   padding: 1rem;
   width: 100%;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top .title {
   font-size: 1.125rem;
   font-weight: 700;
   color: #ffffff;
   font-family: "Inter";
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top .artist {
   font-size: 0.875rem;
   color: #bfdbfe;
   margin-top: -15px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .top .time {
   font-size: 0.875rem;
   font-weight: 500;
   color: #ffffff;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .bar-wrap {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .bar-wrap {
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .bar-wrap .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .bar-wrap .bar-bg {
   height: 0.5rem;
   width: 100%;
   background-color: #1e3a8a;
@@ -54,17 +54,17 @@
   overflow: hidden;
   margin-top: -15px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .bar-wrap .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .bar-wrap .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .btn {
   padding: 0.5rem;
   color: #bfdbfe;
   transition: color 0.3s;
@@ -72,14 +72,14 @@
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .btn:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .forbackIcn {
   width: 24px;
   height: 24px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .play {
   padding: 10px;
   background-color: #ffffff;
   color: #1d4ed8;
@@ -91,33 +91,33 @@
   align-items: center;
   justify-content: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .play:hover {
   background-color: #dbeafe;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol .volumeIcn {
   color: #bfdbfe;
   margin-right: 0.5rem;
   width: 16px;
   height: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol .vol-track {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol .vol-track {
   width: 5rem;
   height: 0.25rem;
   background-color: #1e3a8a;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol .vol-track .vol-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player1 .controls .vol .vol-track .vol-fill {
   width: 66.666%;
   height: 100%;
   background-color: #bfdbfe;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 {
   display: flex;
   gap: 1rem;
   background-color: #000;
@@ -126,7 +126,7 @@
   border: 1px solid #1f2937;
   width: 100%;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .cover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .cover {
   width: 4rem;
   height: 4rem;
   border-radius: 0.375rem;
@@ -134,76 +134,76 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .cover .img {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .cover .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .cover .img.spin {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .cover .img.spin {
   animation: spin 3s linear infinite;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info {
   flex: 1;
   margin-top: -14px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top .title {
   font-weight: 500;
   font-family: "Inter";
   color: #ffffff;
   font-size: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top .artist {
   font-size: 0.75rem;
   color: #9ca3af;
   line-height: 0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .top .time {
   font-size: 0.75rem;
   color: #9ca3af;
   margin-top: 10px;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .bar-bg {
   height: 0.25rem;
   width: 100%;
   background-color: #1f2937;
   border-radius: 9999px;
   margin-bottom: 0.75rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .bar-bg .bar-fill {
   height: 100%;
   width: 0;
   background-color: #ef4444;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns {
   display: flex;
   gap: 0.5rem;
   margin-left: -8px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .btn {
   color: #9ca3af;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .btn:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .play {
   padding: 5px;
   background-color: #ef4444;
   color: #ffffff;
@@ -214,45 +214,45 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .btns .forbackIcn {
   width: 16px;
   height: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .vol {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .vol {
   display: flex;
   align-items: center;
   color: #9ca3af;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .vol .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player2 .info .controls .vol .volumeIcn {
   width: 14px;
   height: 14px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 {
   background: linear-gradient(to bottom right, #4c1d95, #312e81);
   border-radius: 1rem;
   padding: 1.5rem;
   width: 100%;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
   margin-top: -15px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .title {
   font-size: 1.25rem;
   font-weight: 700;
   font-family: "inter";
   color: #a78bfa;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .artist {
   font-size: 0.875rem;
   color: #a5b4fc;
   line-height: 0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status {
   width: 3rem;
   height: 3rem;
   border-radius: 9999px;
@@ -262,46 +262,46 @@
   justify-content: center;
   padding: 0 20px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave {
   display: flex;
   gap: 1px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar {
   width: 2px;
   height: 8px;
   background: #d8b4fe;
   animation: wave 1s ease-in-out infinite;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(2) {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(2) {
   animation-delay: 0.1s;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(3) {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(3) {
   animation-delay: 0.2s;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(4) {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(4) {
   animation-delay: 0.3s;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(5) {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(5) {
   animation-delay: 0.4s;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(6) {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(6) {
   animation-delay: 0.5s;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(7) {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(7) {
   animation-delay: 0.6s;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(8) {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .wave .bar:nth-child(8) {
   animation-delay: 0.7s;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .duration {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .top .status .duration {
   color: #d8b4fe;
   font-size: 0.875rem;
   font-weight: 500;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress {
   margin-bottom: 1.5rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress .bar-bg {
   height: 0.25rem;
   width: 100%;
   background-color: #5b21b6;
@@ -309,11 +309,11 @@
   overflow: hidden;
   margin-bottom: 0.25rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress .bar-bg .bar-fill {
   height: 100%;
   width: 0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .progress .time {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
@@ -321,22 +321,22 @@
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .btn {
   color: #a5b4fc;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .btn:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .play {
   padding: 10px;
   border-radius: 9999px;
   background: linear-gradient(to right, #ec4899, #a855f7);
@@ -347,28 +347,28 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .forbackIcn {
   width: 20px;
   height: 20px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol {
   display: flex;
   align-items: center;
   color: #a5b4fc;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol .volumeIcn {
   margin-right: 0.5rem;
   width: 16px;
   height: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol .vol-track {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol .vol-track {
   width: 4rem;
   height: 0.25rem;
   background-color: #5b21b6;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol .vol-track .vol-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player3 .controls .vol .vol-track .vol-fill {
   width: 75%;
   height: 100%;
   background-color: #a855f7;
@@ -382,7 +382,7 @@
     transform: scaleY(1);
   }
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -393,7 +393,7 @@
   color: #111827;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .play {
   padding: 10px;
   background-color: #4f46e5;
   border-radius: 9999px;
@@ -404,26 +404,26 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info {
   flex: 1;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .top {
   display: flex;
   justify-content: space-between;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .top .title {
   font-size: 0.875rem;
   font-weight: 500;
   font-family: "inter";
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .top .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .top .time {
   font-size: 0.75rem;
   color: #6b7280;
   margin-top: 15px;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .bar-bg {
   height: 0.5rem;
   width: 100%;
   background-color: #f3f4f6;
@@ -431,13 +431,13 @@
   position: relative;
   margin-bottom: 15px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #4f46e5;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .bar-bg .bar-fill .thumb {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .info .bar-bg .bar-fill .thumb {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -447,48 +447,48 @@
   border-radius: 9999px;
   border: 2px solid #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls {
   display: flex;
   gap: 0.5rem;
   color: #9ca3af;
   margin-top: 10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn {
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
   color: #9ca3af;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn:hover {
   color: #4f46e5;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn .forbackIcn, .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn .forbackIcn, .wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player4 .controls .btn .volumeIcn {
   width: 18px;
   height: 18px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 {
   background-color: #1f2937;
   border-radius: 0.75rem;
   padding: 1rem;
   width: 100%;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top {
   display: flex;
   justify-content: space-between;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top .title {
   color: #ffffff;
   font-weight: 700;
   font-size: 1.125rem;
   font-family: "Inter";
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top .artist {
   color: #9ca3af;
   font-size: 0.875rem;
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top .badge {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .top .badge {
   padding: 0.25rem 0.75rem;
   background-color: rgb(34, 197, 94);
   font-size: 0.75rem;
@@ -498,47 +498,47 @@
   align-self: flex-start;
   margin-top: 15px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .waveform {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .waveform {
   display: flex;
   align-items: flex-end;
   gap: 2px;
   height: 40px;
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .waveform .bar {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .waveform .bar {
   width: 2px;
   background-color: #6b7280;
   border-radius: 1px;
   transition: all 0.3s ease;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .time {
   font-size: 0.875rem;
   font-weight: 500;
   color: #9ca3af;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .btn {
   color: #9ca3af;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .btn:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .play {
   padding: 10px;
   background-color: rgb(34, 197, 94);
   color: #065f46;
@@ -549,75 +549,75 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .btns .forbackIcn {
   width: 20px;
   height: 20px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .vol {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .vol {
   display: flex;
   align-items: center;
   color: #9ca3af;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .vol:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .vol:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .vol .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player5 .controls .vol .volumeIcn {
   width: 18px;
   height: 18px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 {
   background: linear-gradient(to right, #facc15, #f97316, #ef4444);
   border-radius: 0.5rem;
   padding: 0.25rem;
   width: 100%;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 {
   background-color: #111827;
   border-radius: 0.5rem;
   padding: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.75rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .title {
   font-weight: 700;
   color: #fbbf24;
   font-family: "inter";
   font-size: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .artist {
   font-size: 0.75rem;
   color: rgba(253, 230, 138, 0.7);
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .heart {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .heart {
   color: #fbbf24;
   transition: color 0.3s;
   background: transparent;
   border: none;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .heart:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .top .heart:hover {
   color: #fcd34d;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress {
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .bar-bg {
   position: relative;
   height: 0.25rem;
   width: 100%;
   background-color: #1f2937;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #fbbf24;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .bar-bg .thumb {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .bar-bg .thumb {
   position: absolute;
   width: 0.75rem;
   height: 0.75rem;
@@ -627,7 +627,7 @@
   margin-left: -0.375rem;
   transform: translateY(-50%);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .progress .time {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
@@ -636,20 +636,20 @@
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .vol {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .vol {
   color: #fbbf24;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .vol .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .vol .volumeIcn {
   width: 16px;
   height: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .play {
   padding: 10px;
   background-color: #fbbf24;
   color: #111827;
@@ -661,18 +661,18 @@
   cursor: pointer;
   border: none;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .play:hover {
   background-color: #fcd34d;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .forbackIcn {
   width: 22px;
   height: 22px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown {
   position: relative;
   display: inline-block;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-button {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-button {
   background-color: transparent;
   font-size: 0.75rem;
   font-weight: 600;
@@ -681,7 +681,7 @@
   border: 1px solid rgba(251, 191, 36, 0.3);
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-options {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-options {
   display: none;
   position: absolute;
   bottom: -50%;
@@ -695,18 +695,18 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   z-index: 1000;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown:hover .speed-options {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown:hover .speed-options {
   display: block;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-option {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-option {
   padding: 6px 10px;
   font-size: 13px;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-option:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player6 .info6 .controls .speed-dropdown .speed-option:hover {
   background-color: #f0f0f0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 {
   display: flex;
   gap: 1rem;
   background-color: #f3f4f6;
@@ -715,7 +715,7 @@
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .cover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .cover {
   height: 4rem;
   width: 4rem;
   border-radius: 0.5rem;
@@ -724,45 +724,45 @@
   flex-shrink: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .cover .img {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .cover .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body {
   flex: 1;
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .title {
   font-weight: 700;
   color: #111827;
   font-family: "inter";
   font-size: 16px;
   margin-bottom: -0.75rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .artist {
   font-size: 0.875rem;
   color: #6b7280;
   margin-bottom: 0.75rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin-left: -7px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .btn {
   color: #6b7280;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .btn:hover {
   color: #3b82f6;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .play {
   padding: 6px;
   background-color: #3b82f6;
   color: #ffffff;
@@ -774,80 +774,80 @@
   cursor: pointer;
   border: none;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .play:hover {
   background-color: #2563eb;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .play .ml-05 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .play .ml-05 {
   margin-left: 0.125rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .forbackIcn {
   width: 17px;
   height: 17px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .bar-bg {
   flex: 1;
   height: 0.25rem;
   background-color: #d1d5db;
   border-radius: 9999px;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #3b82f6;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls .time {
   font-size: 0.875rem;
   color: #6b7280;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 {
   background: linear-gradient(to bottom, #064e3b, #134e4a);
   border-radius: 0.75rem;
   padding: 1.25rem;
   width: 100%;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .title {
   font-size: 1.125rem;
   font-weight: 700;
   color: #6ee7b7;
   font-family: "inter";
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .artist {
   font-size: 0.75rem;
   color: #34d399;
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons {
   display: flex;
   gap: 0.5rem;
   margin-top: -35px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons .btn {
   color: #3ac492;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons .btn:hover {
   color: #a7f3d0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons .btn .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .top .icons .btn .volumeIcn {
   width: 16px;
   height: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress {
   margin-bottom: 1.5rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .bar-bg {
   position: relative;
   width: 100%;
   height: 0.5rem;
@@ -855,12 +855,12 @@
   border-radius: 0.5rem;
   margin-bottom: 0.25rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #34d399;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .bar-bg .thumb {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .bar-bg .thumb {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -869,7 +869,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-50%);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .progress .time {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
@@ -878,11 +878,11 @@
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls {
   display: flex;
   justify-content: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls .play {
   padding: 10px;
   background-color: #34d399;
   color: #064e3b;
@@ -894,14 +894,14 @@
   cursor: pointer;
   border: none;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls .play:hover {
   background-color: #6ee7b7;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls .play .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player8 .controls .play .forbackIcn {
   width: 28px;
   height: 28px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 {
   background: linear-gradient(to bottom right, #111827, #1f2937, #111827);
   border-radius: 0.5rem;
   padding: 1rem;
@@ -909,13 +909,13 @@
   border: 1px solid #374151;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head .icon {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head .icon {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #db2777;
@@ -925,18 +925,18 @@
   align-items: center;
   justify-content: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head .title {
   font-weight: 500;
   color: #ffffff;
   font-family: "inter";
   font-size: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .head .artist {
   font-size: 0.75rem;
   color: #9ca3af;
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .bar-bg {
   position: relative;
   width: 100%;
   height: 0.25rem;
@@ -944,42 +944,42 @@
   border-radius: 9999px;
   margin-bottom: 0.75rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .time {
   font-size: 0.75rem;
   color: #9ca3af;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .btn {
   color: #9ca3af;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .btn:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .btn .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .btn .forbackIcn {
   width: 17px;
   height: 17px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .play {
   padding: 6px;
   background-color: #db2777;
   color: #ffffff;
@@ -991,27 +991,27 @@
   cursor: pointer;
   border: none;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player9 .controls .buttons .play:hover {
   background-color: #ec4899;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 {
   background-color: #000000;
   border-radius: 0.75rem;
   width: 100%;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 {
   position: relative;
   height: 5rem;
   background: linear-gradient(to right, #ef4444, #8b5cf6);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .overlay {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .overlay {
   position: absolute;
   inset: 0;
   background-color: #000000;
   opacity: 0.2;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .info {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .info {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1019,21 +1019,21 @@
   padding: 1rem;
   top: -17px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .info .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .info .title {
   font-size: 1.125rem;
   font-weight: 700;
   color: #ffffff;
   font-family: "inter";
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .info .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .banner10 .info .artist {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.7);
   line-height: 0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body {
   padding: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .time {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
@@ -1042,43 +1042,43 @@
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .bar-bg {
   height: 0.25rem;
   width: 100%;
   background-color: #1f2937;
   border-radius: 9999px;
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .btn {
   color: #6b7280;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .btn:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .btn .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .btn .volumeIcn {
   width: 20px;
   height: 20px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .main {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .main {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .play {
   padding: 10px;
   border-radius: 9999px;
   background: linear-gradient(to right, #ef4444, #8b5cf6);
@@ -1089,14 +1089,14 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .forbackIcn {
   width: 20px;
   height: 20px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .spacer {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player10 .body .controls .spacer {
   width: 1.25rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 {
   background-color: #f3f4f6;
   border-radius: 0.75rem;
   padding: 1rem;
@@ -1104,12 +1104,12 @@
   color: #1f2937;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .play {
   padding: 10px;
   background-color: #f97316;
   border-radius: 0.375rem;
@@ -1120,97 +1120,97 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .play .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .play .forbackIcn {
   width: 18px;
   height: 18px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .title {
   font-weight: 600;
   font-family: "inter";
   font-size: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .top .artist {
   font-size: 0.875rem;
   color: #6b7280;
   margin-top: -13px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress {
   display: flex;
   align-items: center;
   margin-bottom: 0.75rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress .time {
   font-size: 0.75rem;
   color: #6b7280;
   margin: 0 0.5rem;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress .bar-bg {
   flex: 1;
   height: 0.5rem;
   background-color: #e5e7eb;
   border-radius: 9999px;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .progress .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #f97316;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .bars {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .bars {
   display: flex;
   gap: 0.25rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .bars .bar-line {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .bars .bar-line {
   width: 0.25rem;
   background-color: #fed7aa;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .mute {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .mute {
   color: #9ca3af;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .mute:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .mute:hover {
   color: #f97316;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .mute .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player11 .bottom .mute .volumeIcn {
   width: 18px;
   height: 18px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 {
   background: linear-gradient(to bottom right, #1e3a8a, #312e81, #4c1d95);
   border-radius: 0.75rem;
   width: 100%;
   padding: 1rem;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head .title {
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   font-family: "inter";
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head .artist {
   color: #93c5fd;
   font-size: 0.75rem;
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .head .time {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -1220,7 +1220,7 @@
   font-size: 0.75rem;
   font-weight: 500;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .bar-bg {
   position: relative;
   height: 0.75rem;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1228,30 +1228,30 @@
   margin-bottom: 1.5rem;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   transition: transform 0.3s ease;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .btn {
   color: #93c5fd;
   transition: color 0.3s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .btn:hover {
   color: #ffffff;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .play {
   padding: 12px;
   border-radius: 9999px;
   background: linear-gradient(to right, #3b82f6, #8b5cf6);
@@ -1263,11 +1263,11 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player12 .controls .forbackIcn {
   width: 24px;
   height: 24px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 {
   background-color: #f9fafb;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
@@ -1275,13 +1275,13 @@
   width: 100%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover {
   position: relative;
   width: 4rem;
   height: 4rem;
@@ -1290,13 +1290,13 @@
   background-color: #e5e7eb;
   flex-shrink: 0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .img {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3);
@@ -1306,10 +1306,10 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay.show {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay.show {
   opacity: 1;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay .overlay-icon {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay .overlay-icon {
   width: 1.5rem;
   height: 1.5rem;
   background-color: #ffffff;
@@ -1318,22 +1318,22 @@
   justify-content: center;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay .overlay-icon .pause-icon {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .cover .overlay .overlay-icon .pause-icon {
   color: #111827;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .title {
   font-weight: 500;
   color: #111827;
   font-family: "inter";
   font-size: 16px;
   margin-top: 0;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .artist {
   font-size: 0.875rem;
   color: #6b7280;
   margin-top: -15px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .time {
   display: flex;
   align-items: center;
   margin-top: 0.25rem;
@@ -1343,42 +1343,42 @@
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .time .sep {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .header .time .sep {
   margin: 0 0.25rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .bar-wrap {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .bar-wrap {
   display: flex;
   align-items: center;
   margin-bottom: 0.75rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .bar-wrap .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .bar-wrap .bar-bg {
   flex: 1;
   height: 0.25rem;
   background-color: #e5e7eb;
   border-radius: 9999px;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .bar-wrap .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .bar-wrap .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #4b5563;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .btn {
   color: #9ca3af;
   transition: color 0.2s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .btn:hover {
   color: #4b5563;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play {
   padding: 8px;
   background-color: #1f2937;
   color: #ffffff;
@@ -1390,101 +1390,101 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play:hover {
   background-color: #374151;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play .forbackIcn, .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play .forbackIcn, .wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player13 .controls .play .volumeIcn {
   width: 15px;
   height: 15px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 {
   background-color: #0f172a;
   border-radius: 0.75rem;
   padding: 1.25rem;
   width: 100%;
   border: 1px solid #1f2937;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .title {
   font-weight: 700;
   color: #22d3ee;
   font-family: "inter";
   font-size: 16px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .artist {
   color: #9ca3af;
   font-size: 0.875rem;
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .cover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .cover {
   width: 3rem;
   height: 3rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .cover .img {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .top .cover .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar {
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top .wave {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top .wave {
   display: flex;
   gap: 0.25rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top .wave .wave-bar {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top .wave .wave-bar {
   width: 0.25rem;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .wavebar-top .time {
   color: #9ca3af;
   font-size: 0.75rem;
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .bar-bg {
   height: 0.25rem;
   background-color: #1f2937;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .wavebar .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: #22d3ee;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .btn {
   color: #6b7280;
   transition: color 0.2s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .btn:hover {
   color: #22d3ee;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play {
   padding: 13px;
   background-color: #22d3ee;
   color: #0f172a;
@@ -1496,14 +1496,14 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play:hover {
   background-color: #67e8f9;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play .forbackIcn, .wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play .forbackIcn, .wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player14 .controls .play .volumeIcn {
   width: 23px;
   height: 23px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 {
   background: linear-gradient(to bottom right, #ec4899, #e11d48);
   border-radius: 1rem;
   padding: 1.5rem;
@@ -1511,56 +1511,56 @@
   color: white;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .title {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .title {
   font-weight: 700;
   font-family: "inter";
   font-size: 16px;
   color: white;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .artist {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .artist {
   color: #fbcfe8;
   font-size: 0.75rem;
   margin-top: -10px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .cover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .cover {
   width: 4rem;
   height: 4rem;
   border-radius: 9999px;
   overflow: hidden;
   border: 4px solid white;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .cover.spin {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .cover.spin {
   animation: spin 8s linear infinite;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .cover .img {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .top .cover .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox {
   margin-bottom: 2rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox .bar-bg {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox .bar-bg {
   position: relative;
   height: 0.5rem;
   background-color: #9d174d;
   border-radius: 9999px;
   overflow: hidden;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox .bar-bg .bar-fill {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox .bar-bg .bar-fill {
   width: 0;
   height: 100%;
   background-color: white;
   border-radius: 9999px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox .time {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .progressbox .time {
   display: flex;
   justify-content: space-between;
   font-size: 0.875rem;
@@ -1569,23 +1569,23 @@
   border-radius: 6px;
   padding: 5px;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .btn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .btn {
   color: #fbcfe8;
   transition: color 0.2s;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .btn:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .btn:hover {
   color: white;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .play {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .play {
   padding: 12px;
   background-color: white;
   color: #be123c;
@@ -1597,10 +1597,10 @@
   border: none;
   cursor: pointer;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .play:hover {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .play:hover {
   background-color: #ffe4e6;
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .forbackIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player15 .controls .forbackIcn {
   width: 30px;
   height: 30px;
 }

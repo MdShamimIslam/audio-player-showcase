@@ -4,7 +4,7 @@ import Style from './Components/Common/Style';
 import Theme from './Components/Common/theme/theme';
 
 document.addEventListener('DOMContentLoaded', () => {
-	const blockNameEls = document.querySelectorAll('.wp-block-b-blocks-audio-player-showcase');
+	const blockNameEls = document.querySelectorAll('.wp-block-aps-audio-player-showcase');
 	blockNameEls.forEach(blockNameEl => {
 		const attributes = JSON.parse(blockNameEl.dataset.attributes);
 

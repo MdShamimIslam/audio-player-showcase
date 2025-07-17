@@ -13,11 +13,11 @@ const Style = ({ attributes, setAttributes, device }) => {
     <>
       <PanelBody
         className="bPlPanelBody"
-        title={__("Player Wrapper", "b-block")}
+        title={__("Player Wrapper", "audio-player-showcase")}
         initialOpen={false}
       >
         <PanelRow>
-          <Label className="">{__("Width", "b-block")}</Label>
+          <Label className="">{__("Width", "audio-player-showcase")}</Label>
           <Device />
         </PanelRow>
         <UnitControl
@@ -28,7 +28,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 
         <UnitControl
           className="mt15"
-          label={__("Padding", "b-block")}
+          label={__("Padding", "audio-player-showcase")}
           value={padding}
           onChange={(v) => setAttributes({ style: updateData(style, v, "padding") })}
           units={[pxUnit(), perUnit()]}
@@ -36,7 +36,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 
         <RangeControl
           className="mt15"
-          label={__("Border Radius", "b-block")}
+          label={__("Border Radius", "audio-player-showcase")}
           labelPosition="left"
           value={radius}
           onChange={(val) => setAttributes({ style: updateData(style, val, "radius") })}
@@ -47,21 +47,21 @@ const Style = ({ attributes, setAttributes, device }) => {
 
         <Background
           isImage={false}
-          label={__("Background", "b-block")}
+          label={__("Background", "audio-player-showcase")}
           value={bg}
           onChange={(val) => setAttributes({ style: updateData(style, val, "bg") })}
         />
 
         {["six", "ten"].includes(playerSl) && <Background
           isImage={false}
-          label={__("Info Background", "b-block")}
+          label={__("Info Background", "audio-player-showcase")}
           value={infoBg}
           onChange={(val) => setAttributes({ style: updateData(style, val, "infoBg") })}
         />}
 
         <BorderControl
           className="mt15"
-          label={__("Border", "b-block")}
+          label={__("Border", "audio-player-showcase")}
           value={border}
           onChange={(val) => setAttributes({ style: updateData(style, val, "border") })}
         />
@@ -70,18 +70,18 @@ const Style = ({ attributes, setAttributes, device }) => {
 
       <PanelBody
         className="bPlPanelBody"
-        title={__("Title", "b-block")}
+        title={__("Title", "audio-player-showcase")}
         initialOpen={false}
       >
         <Typography
-          label={__("Typo", "b-block")}
+          label={__("Typo", "audio-player-showcase")}
           value={title.typo}
           onChange={(val) => setAttributes({ style: updateData(style, val, "title", "typo") })}
         />
 
         <ColorControl
           className="mt15"
-          label={__("Color", "b-block")}
+          label={__("Color", "audio-player-showcase")}
           value={title.color}
           onChange={(val) => setAttributes({ style: updateData(style, val, "title", "color") })}
         />
@@ -90,20 +90,20 @@ const Style = ({ attributes, setAttributes, device }) => {
 
       {playerSl !== "four" && <PanelBody
         className="bPlPanelBody"
-        title={__("Artist", "b-block")}
+        title={__("Artist", "audio-player-showcase")}
         initialOpen={false}
       >
 
         <Typography
           className="mt20"
-          label={__("Typo", "b-block")}
+          label={__("Typo", "audio-player-showcase")}
           value={artist.typo}
           onChange={(val) => setAttributes({ style: updateData(style, val, "artist", "typo") })}
         />
 
         <ColorControl
           className="mt15"
-          label={__("Color", "b-block")}
+          label={__("Color", "audio-player-showcase")}
           value={artist.color}
           onChange={(val) => setAttributes({ style: updateData(style, val, "artist", "color") })}
         />
@@ -113,18 +113,18 @@ const Style = ({ attributes, setAttributes, device }) => {
 
       <PanelBody
         className="bPlPanelBody"
-        title={__("Time", "b-block")}
+        title={__("Time", "audio-player-showcase")}
         initialOpen={false}
       >
         <Typography
           className="mt20"
-          label={__("Time Typo", "b-block")}
+          label={__("Time Typo", "audio-player-showcase")}
           value={time.typo}
           onChange={(val) => setAttributes({ style: updateData(style, val, "time", "typo") })}
         />
 
         <ColorsControl
-          label={__("Colors", "b-block")}
+          label={__("Colors", "audio-player-showcase")}
           value={time.colors}
           onChange={(val) => setAttributes({ style: updateData(style, val, "time", "colors") })}
         />
@@ -133,11 +133,11 @@ const Style = ({ attributes, setAttributes, device }) => {
       {["two", "seven", "thirteen", "fourteen", "fifteen"].includes(playerSl) && (
         <PanelBody
           className="bPlPanelBody"
-          title={__("Thumbnail", "b-block")}
+          title={__("Thumbnail", "audio-player-showcase")}
           initialOpen={false}
         >
           <PanelRow className="mt20">
-            <Label className="">{__("Width", "b-block")}</Label>
+            <Label className="">{__("Width", "audio-player-showcase")}</Label>
             <Device />
           </PanelRow>
           <UnitControl
@@ -147,7 +147,7 @@ const Style = ({ attributes, setAttributes, device }) => {
           />
 
           <PanelRow className="mt20">
-            <Label className="">{__("Height", "b-block")}</Label>
+            <Label className="">{__("Height", "audio-player-showcase")}</Label>
             <Device />
           </PanelRow>
           <UnitControl
@@ -158,13 +158,13 @@ const Style = ({ attributes, setAttributes, device }) => {
 
           <BorderControl
             className="mt20 mb20"
-            label={__("Border", "b-block")}
+            label={__("Border", "audio-player-showcase")}
             value={thumbnail.border}
             onChange={(val) => setAttributes({ style: updateData(style, val, "thumbnail", "border") })}
           />
 
           <BoxControl
-            label={__("Border Radius", "b-block")}
+            label={__("Border Radius", "audio-player-showcase")}
             values={thumbnail.radius}
             onChange={(val) => setAttributes({ style: updateData(style, val, "thumbnail", "radius") })}
             units={[pxUnit()]}
@@ -174,11 +174,11 @@ const Style = ({ attributes, setAttributes, device }) => {
 
       <PanelBody
         className="bPlPanelBody"
-        title={__("Controls", "b-block")}
+        title={__("Controls", "audio-player-showcase")}
         initialOpen={false}
       >
         <RangeControl
-          label={__("Size", "b-block")}
+          label={__("Size", "audio-player-showcase")}
           value={controls.size}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "size") })}
           min={10}
@@ -186,7 +186,7 @@ const Style = ({ attributes, setAttributes, device }) => {
           step={1}
         />
         {!["seven", "nine", "twelve", "fifteen"].includes(playerSl) && <RangeControl
-          label={__("Volume Size", "b-block")}
+          label={__("Volume Size", "audio-player-showcase")}
           value={controls.volumeSize}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "volumeSize") })}
           min={10}
@@ -196,27 +196,27 @@ const Style = ({ attributes, setAttributes, device }) => {
 
         <ColorControl
           className="mt20"
-          label={__("Color", "b-block")}
+          label={__("Color", "audio-player-showcase")}
           value={controls.color}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "color") })}
         />
 
         <ColorControl
-          label={__("Hover Color", "b-block")}
+          label={__("Hover Color", "audio-player-showcase")}
           value={controls.hovColor}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "hovColor") })}
         />
 
         <ColorsControl
           className="mt20"
-          label={__("Play & Pause Colors", "b-block")}
+          label={__("Play & Pause Colors", "audio-player-showcase")}
           value={controls.playPauseColors}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "playPauseColors") })}
         />
 
         <ColorsControl
           className="mb20"
-          label={__("Play & Pause Hover", "b-block")}
+          label={__("Play & Pause Hover", "audio-player-showcase")}
           value={controls.playPauseHovColors}
           onChange={(val) => setAttributes({ style: updateData(style, val, "controls", "playPauseHovColors") })}
         />
@@ -224,18 +224,18 @@ const Style = ({ attributes, setAttributes, device }) => {
 
       {playerSl !== "five" && <PanelBody
         className="bPlPanelBody"
-        title={__("Range", "b-block")}
+        title={__("Range", "audio-player-showcase")}
         initialOpen={false}
       >
         <ColorControl
-          label={__("Color", "b-block")}
+          label={__("Color", "audio-player-showcase")}
           value={range?.color}
           onChange={(val) => setAttributes({ style: updateData(style, val, "range", "color") })}
         />
 
         <ColorControl
           className="mt15"
-          label={__("Progress Color", "b-block")}
+          label={__("Progress Color", "audio-player-showcase")}
           value={range?.progressColor}
           onChange={(val) => setAttributes({ style: updateData(style, val, "range", "progressColor") })}
         />

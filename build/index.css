@@ -9,7 +9,7 @@
   font-weight: 700;
 }
 
-.wp-block-b-blocks-audio-player-showcase .theme-preview-grid {
+.wp-block-aps-audio-player-showcase .theme-preview-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
@@ -19,22 +19,22 @@
   max-height: 620px;
   overflow-y: auto;
 }
-.wp-block-b-blocks-audio-player-showcase .theme-preview-grid .theme-preview-item {
+.wp-block-aps-audio-player-showcase .theme-preview-grid .theme-preview-item {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.wp-block-b-blocks-audio-player-showcase .theme-preview-grid .theme-preview-item:hover {
+.wp-block-aps-audio-player-showcase .theme-preview-grid .theme-preview-item:hover {
   transform: translateY(-2px);
 }
-.wp-block-b-blocks-audio-player-showcase .theme-preview-grid .theme-preview-item .theme-preview-player {
+.wp-block-aps-audio-player-showcase .theme-preview-grid .theme-preview-item .theme-preview-player {
   margin-bottom: 10px;
   transform-origin: center top;
 }
-.wp-block-b-blocks-audio-player-showcase .theme-preview-grid .theme-preview-item p {
+.wp-block-aps-audio-player-showcase .theme-preview-grid .theme-preview-item p {
   color: white;
   font-family: "inter";
 }
-.wp-block-b-blocks-audio-player-showcase .bBlocksAudioPlayer .audioPlayer .volumeIcn {
+.wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayer .volumeIcn {
   pointer-events: unset;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************!*\

@@ -1,13 +1,13 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "b-blocks/audio-player-showcase",
+	"name": "aps/audio-player-showcase",
 	"version": "1.0.0",
 	"title": "Audio Player Showcase",
 	"category": "widgets",
 	"description": "Showcase and play your audio tracks with a stylish, customizable player block.",
 	"keywords": ["Audio Player Showcase", "Audio", "Player", "Showcase"],
-	"textdomain": "b-blocks",
+	"textdomain": "audio-player-showcase",
 	"attributes": {
 		"align": {
 			"type": "string",

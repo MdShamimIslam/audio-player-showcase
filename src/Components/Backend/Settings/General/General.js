@@ -17,19 +17,19 @@ const General = ({ attributes, setAttributes }) => {
     <>
       <PanelBody
         className="bPlPanelBody"
-        title={__("Player Configuration", "b-blocks")}
+        title={__("Player Configuration", "audio-player-showcase")}
       >
         <SelectControl
-          label={__("Select Player", "b-blocks")}
+          label={__("Select Player", "audio-player-showcase")}
           labelPosition="left"
           value={playerSl}
           options={playerTypeOptions}
           onChange={(val) => setAttributes(themeSwitch(val, attributes))}
-          help={__("Some settings will be change when you will change the player.", "b-blocks")}
+          help={__("Some settings will be change when you will change the player.", "audio-player-showcase")}
         />
 
         <PanelRow>
-          <Label className="">{__("Title:", "b-blocks")}</Label>
+          <Label className="">{__("Title:", "audio-player-showcase")}</Label>
           <TextControl
             value={title}
             onChange={(v) => setAttributes({ item: updateData(item, v, 'title') })}
@@ -37,14 +37,14 @@ const General = ({ attributes, setAttributes }) => {
         </PanelRow>
 
         {playerSl !== "four" && <PanelRow>
-          <Label className="">{__("Artist:", "b-blocks")}</Label>
+          <Label className="">{__("Artist:", "audio-player-showcase")}</Label>
           <TextControl
             value={artist}
             onChange={(v) => setAttributes({ item: updateData(item, v, 'artist') })}
           />
         </PanelRow>}
 
-        <Label>{__("Audio File:", "b-blocks")}</Label>
+        <Label>{__("Audio File:", "audio-player-showcase")}</Label>
         <InlineDetailMediaUpload
           types={["audio"]}
           value={audio}
@@ -57,34 +57,34 @@ const General = ({ attributes, setAttributes }) => {
               })
             })
           }}
-          placeholder={__("Enter Audio URL", "b-blocks")}
+          placeholder={__("Enter Audio URL", "audio-player-showcase")}
           isMeta={true}
         />
 
         {["two", "seven", "thirteen", "fourteen", "fifteen"].includes(playerSl) && <>
-          <Label>{__("Cover Photo:", "b-blocks")}</Label>
+          <Label>{__("Cover Photo:", "audio-player-showcase")}</Label>
           <InlineDetailMediaUpload
             types={["image"]}
             value={cover}
             onChange={(v) => setAttributes({ item: updateData(item, v, 'cover') })}
-            placeholder={__("Enter Cover Image URL", "b-blocks")}
+            placeholder={__("Enter Cover Image URL", "audio-player-showcase")}
           />
         </>
         }
       </PanelBody>
 
-      <PanelBody className="bPlPanelBody" title={__("Elements", "b-blocks")} >
+      <PanelBody className="bPlPanelBody" title={__("Elements", "audio-player-showcase")} >
         {!['six', 'eight', 'eleven'].includes(playerSl) && <>
           <ToggleControl
             className="mt10"
             checked={isForBack}
-            label={__("Enable Forward/Backward", "b-blocks")}
+            label={__("Enable Forward/Backward", "audio-player-showcase")}
             onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isForBack") })
             }
           />
           {isForBack && <RangeControl
             className="mt15"
-            label={__("Skip Time (seconds)", "b-blocks")}
+            label={__("Skip Time (seconds)", "audio-player-showcase")}
             labelPosition="left"
             value={skipTime}
             onChange={(val) => setAttributes({ item: updateData(item, val, "skipTime") })}
@@ -98,7 +98,7 @@ const General = ({ attributes, setAttributes }) => {
         {!['seven', 'nine', 'twelve', 'fifteen'].includes(playerSl) && <ToggleControl
           className="mt10"
           checked={isVolume}
-          label={__("Show/Hide Volume", "b-blocks")}
+          label={__("Show/Hide Volume", "audio-player-showcase")}
           onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isVolume") })
           }
         />}
@@ -106,7 +106,7 @@ const General = ({ attributes, setAttributes }) => {
         <ToggleControl
           className="mt10"
           checked={isCurrentTime}
-          label={__("Show Current Time", "b-blocks")}
+          label={__("Show Current Time", "audio-player-showcase")}
           onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isCurrentTime") })
           }
         />
@@ -114,7 +114,7 @@ const General = ({ attributes, setAttributes }) => {
         {!['two', 'five', 'seven'].includes(playerSl) && <ToggleControl
           className="mt10"
           checked={isDurationTime}
-          label={__("Show Duration Time", "b-blocks")}
+          label={__("Show Duration Time", "audio-player-showcase")}
           onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isDurationTime") })
           }
         />}
@@ -122,7 +122,7 @@ const General = ({ attributes, setAttributes }) => {
         {playerSl === "five" && <ToggleControl
           className="mt10"
           checked={isBadge}
-          label={__("Show/Hide Badge", "b-blocks")}
+          label={__("Show/Hide Badge", "audio-player-showcase")}
           onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isBadge") })
           }
         />}
@@ -131,14 +131,14 @@ const General = ({ attributes, setAttributes }) => {
           <ToggleControl
             className="mt10"
             checked={isHeart}
-            label={__("Show/Hide Heart icon", "b-blocks")}
+            label={__("Show/Hide Heart icon", "audio-player-showcase")}
             onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isHeart") })
             }
           />
           <ToggleControl
             className="mt10"
             checked={isPlaybackSpeed}
-            label={__("Show/Hide Playback Speed", "b-blocks")}
+            label={__("Show/Hide Playback Speed", "audio-player-showcase")}
             onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isPlaybackSpeed") })
             }
           />
@@ -147,7 +147,7 @@ const General = ({ attributes, setAttributes }) => {
           <ToggleControl
             className="mt10"
             checked={isRefresh}
-            label={__("Show/Hide Refresh icon", "b-blocks")}
+            label={__("Show/Hide Refresh icon", "audio-player-showcase")}
             onChange={(v) => setAttributes({ showcaseElements: updateData(showcaseElements, v, "isRefresh") })
             }
           />

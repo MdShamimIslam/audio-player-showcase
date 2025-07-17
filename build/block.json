@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "b-blocks/audio-player-showcase",
+  "name": "aps/audio-player-showcase",
   "version": "1.0.0",
   "title": "Audio Player Showcase",
   "category": "widgets",
@@ -12,7 +12,7 @@
     "Player",
     "Showcase"
   ],
-  "textdomain": "b-blocks",
+  "textdomain": "audio-player-showcase",
   "attributes": {
     "align": {
       "type": "string",
