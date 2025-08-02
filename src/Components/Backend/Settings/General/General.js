@@ -12,6 +12,7 @@ const General = ({ attributes, setAttributes }) => {
   const { isForBack, isVolume, isCurrentTime, isDurationTime, isBadge, isHeart, isPlaybackSpeed, isRefresh } = showcaseElements || {};
   const { title, artist, audio = {}, cover = {}, skipTime } = item || {};
   const { playerSl } = options || {};
+  
 
   return (
     <>

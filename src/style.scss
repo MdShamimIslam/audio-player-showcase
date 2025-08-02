@@ -868,7 +868,7 @@ $primaryColor: #4527a4;
 
 				.body {
 					flex: 1;
-					margin-top: -10px;
+					margin-top: -6px;
 
 					.title {
 						 font-weight: 700;
@@ -881,7 +881,8 @@ $primaryColor: #4527a4;
 					.artist {
 						 font-size: 0.875rem;
 						 color: #6b7280;
-						margin-bottom: 0.75rem;
+						 margin-bottom: 0.75rem;
+						 margin-top: 8px;
 					}
 
 					.controls {

@@ -732,7 +732,7 @@
 }
 .wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body {
   flex: 1;
-  margin-top: -10px;
+  margin-top: -6px;
 }
 .wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .title {
   font-weight: 700;
@@ -745,6 +745,7 @@
   font-size: 0.875rem;
   color: #6b7280;
   margin-bottom: 0.75rem;
+  margin-top: 8px;
 }
 .wp-block-aps-audio-player-showcase .bBlocksAudioPlayer .audioPlayerWrapper .player7 .body .controls {
   display: flex;
